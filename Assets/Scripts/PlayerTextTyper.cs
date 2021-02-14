@@ -10,15 +10,12 @@ public class PlayerTextTyper : MonoBehaviour
     public TextMeshProUGUI textBox; //The text display (provisional)
     public TMP_InputField inputBox; //The text input field for Unity (provisional)
 
-    List<string> keyList = new List<string>(); //A list of accepted key inputs (should only be letters)
-
     // Start is called before the first frame update
     void Start()
     {
         textBox = this.gameObject.GetComponentInChildren<TextMeshProUGUI>();    //Get text box
         inputBox = this.gameObject.GetComponentInChildren<TMP_InputField>();    //Get input field
         textBox.text = "";                                                      //Empty output text box
-        //keyList = ["A", "B", "C"];
         inputBox.ActivateInputField();                                          //Activate text input without clicking
     }
 
@@ -29,13 +26,13 @@ public class PlayerTextTyper : MonoBehaviour
         inputBox.ActivateInputField();
 
         //If a character was entered into the input field, copy it over to the output text via strings
-        //Delete character from input field once done
+        //Delete character from input field afterward
+        //As a result, "inputBox.text.ToString()" gives us the most recent player input on a per-character basis
+        //We can then script around the input character using the "textTyped" string in any other script
         if (inputBox.text != null)
         {
-            textBox.text = textBox.text.ToString() + inputBox.text.ToString();
-            //string tempString = inputBox.text.ToString();
-            //string outputString = textBox.text.ToString() + tempString;
-            //textBox.text = outputString;
+            textTyped = inputBox.text.ToString();
+            textBox.text = textBox.text.ToString() + textTyped;
             inputBox.text = null;
         }
     }
