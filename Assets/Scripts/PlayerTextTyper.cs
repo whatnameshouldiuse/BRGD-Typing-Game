@@ -6,9 +6,9 @@ using TMPro;
 
 public class PlayerTextTyper : MonoBehaviour
 {
-    public string textTyped;    //The text typed by the player
-    public TextMeshProUGUI textBox; //The text display (provisional)
-    public TMP_InputField inputBox; //The text input field for Unity (provisional)
+    public string textTyped;        //The text typed by the player
+    public TMP_InputField inputBox; //The text input field
+    public TextMeshProUGUI textBox; //The text display for the player's input
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,7 @@ public class PlayerTextTyper : MonoBehaviour
         textBox = this.gameObject.GetComponentInChildren<TextMeshProUGUI>();    //Get text box
         inputBox = this.gameObject.GetComponentInChildren<TMP_InputField>();    //Get input field
         textBox.text = "";                                                      //Empty output text box
+        inputBox.text = "";                                                     //Empty input field
         inputBox.ActivateInputField();                                          //Activate text input without clicking
     }
 
@@ -23,17 +24,25 @@ public class PlayerTextTyper : MonoBehaviour
     void Update()
     {
         //Re-activate the input field if the player clicked off of it for some reason
+        //We'll want the input field hidden eventually, so the player couldn't re-activate it on their own
         inputBox.ActivateInputField();
 
         //If a character was entered into the input field, copy it over to the output text via strings
         //Delete character from input field afterward
         //As a result, "inputBox.text.ToString()" gives us the most recent player input on a per-character basis
         //We can then script around the input character using the "textTyped" string in any other script
-        if (inputBox.text != null)
+        if (inputBox.text != "")
         {
             textTyped = inputBox.text.ToString();
-            textBox.text = textBox.text.ToString() + textTyped;
-            inputBox.text = null;
+
+            //To make output field print all text typed
+            //textBox.text = textBox.text.ToString() + textTyped;
+
+            //To make output field print only the latest character
+            textBox.text = textTyped;
+
+            //Reset input field
+            inputBox.text = "";
         }
     }
 }
