@@ -19,6 +19,13 @@ public class PopUpManager : MonoBehaviour
     public float XMax = 5;
     public float YMax = 5;
 
+    [Header("Popup Size")]
+    public float MinWidth = 3;
+    public float MinHeight = 3;
+    [Space]
+    public float MaxWidth = 7;
+    public float MaxHeight = 7;
+
     [Header("Pop-Up Game Objects")]
     public GameObject PopUpContainer;
     public GameObject[] PopUpList;
@@ -48,7 +55,10 @@ public class PopUpManager : MonoBehaviour
 
         GameObject spawningObject = Instantiate(spawningObject_prefab);
         spawningObject.transform.SetParent(PopUpContainer.transform);
+
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), 0);
+        SpriteRenderer objectRend = spawningObject.GetComponent<SpriteRenderer>();
+        objectRend.size = new Vector2(Random.Range(MinWidth, MaxWidth), Random.Range(MinHeight, MaxHeight));
     }
 
     IEnumerator StartPopulate()
