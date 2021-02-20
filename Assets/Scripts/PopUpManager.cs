@@ -4,28 +4,39 @@ using UnityEngine;
 
 public class PopUpManager : MonoBehaviour
 {
+    [Header("Spawn Properties")]
+    [Tooltip("Initial number of Pop-ups present when starting the game")]
+    public int StartCount = 6;
+    [Tooltip("The time between each Pop-ups, in seconds, at the start of the game")]
+    public float StartPopUpTime = 0.1f;
+    [Tooltip("The time between each Pop-ups, in seconds")]
+    public float PopUpTime = 2.0f;
+
     [Header("Spawn Range")]
-    public int XMin = -5;
-    public int YMin = -5;
+    public float XMin = -5;
+    public float YMin = -5;
     [Space]
-    public int XMax = 5;
-    public int YMax = 5;
+    public float XMax = 5;
+    public float YMax = 5;
 
     [Header("Pop-Up Game Objects")]
     public GameObject PopUpContainer;
     public GameObject[] PopUpList;
 
+    private bool _startRoutine = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(StartPopulate());
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Test
-        if (Input.GetMouseButtonDown(0))
+        if (!_startRoutine) StopAllCoroutines();
+
+        if (Input.GetMouseButtonDown(0) && !_startRoutine)
         {
             CreatePopUp();
         }
@@ -38,5 +49,15 @@ public class PopUpManager : MonoBehaviour
         GameObject spawningObject = Instantiate(spawningObject_prefab);
         spawningObject.transform.SetParent(PopUpContainer.transform);
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), 0);
+    }
+
+    IEnumerator StartPopulate()
+    {
+        for (int i = 0; i < StartCount; i++)
+        {
+            CreatePopUp();
+            yield return new WaitForSecondsRealtime(StartPopUpTime);
+        }
+        _startRoutine = false;
     }
 }
