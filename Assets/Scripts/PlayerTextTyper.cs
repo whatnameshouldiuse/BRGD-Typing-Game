@@ -7,6 +7,7 @@ using TMPro;
 public class PlayerTextTyper : MonoBehaviour
 {
     public string textTyped;        //The text typed by the player
+    public string finalText;        //The finished text output by the player by pressing enter
     public TMP_InputField inputBox; //The text input field
     public TextMeshProUGUI textBox; //The text display for the player's input
 
@@ -35,14 +36,20 @@ public class PlayerTextTyper : MonoBehaviour
         {
             textTyped = inputBox.text.ToString();
 
-            //To make output field print all text typed
-            //textBox.text = textBox.text.ToString() + textTyped;
+            //To make output field print all text typed per-character
+            textBox.text = textBox.text.ToString() + textTyped;
 
             //To make output field print only the latest character
-            textBox.text = textTyped;
+            //textBox.text = textTyped;
 
             //Reset input field
             inputBox.text = "";
+        }
+
+        //If the player presses enter, package and deliver current typed text for other scripts to check against
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            finalText = textBox.text.ToString();
         }
     }
 }
