@@ -22,4 +22,9 @@ public class PopUpController : MonoBehaviour
     {
         
     }
+
+    public void Winner()
+    {
+        Destroy(this.gameObject);
+    }
 }

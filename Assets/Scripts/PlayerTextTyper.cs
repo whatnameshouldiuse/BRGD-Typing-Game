@@ -8,8 +8,12 @@ public class PlayerTextTyper : MonoBehaviour
 {
     public string textTyped;        //The text typed by the player
     public string finalText;        //The finished text output by the player by pressing enter
+
     public TMP_InputField inputBox; //The text input field
     public TextMeshProUGUI textBox; //The text display for the player's input
+
+    public GameObject popHandler;   //The popup handler object
+    public TextComparison handlerScript; //The script for comparing player text to popup text
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +23,9 @@ public class PlayerTextTyper : MonoBehaviour
         textBox.text = "";                                                      //Empty output text box
         inputBox.text = "";                                                     //Empty input field
         inputBox.ActivateInputField();                                          //Activate text input without clicking
+
+        popHandler = GameObject.Find("Popup Handler");                          //Get handler object for popups
+        handlerScript = popHandler.GetComponent<TextComparison>();              //Get script for popup handler
     }
 
     // Update is called once per frame
@@ -53,7 +60,12 @@ public class PlayerTextTyper : MonoBehaviour
         //If the player presses enter, package and deliver current typed text for other scripts to check against
         if (Input.GetKeyDown(KeyCode.Return))
         {
+            //Send input text as parameter to text comparison handler
             finalText = textBox.text.ToString();
+            handlerScript.CompareText(finalText);
+
+            //Empty input field for next player input
+            inputBox.text = "";
         }
     }
 }
