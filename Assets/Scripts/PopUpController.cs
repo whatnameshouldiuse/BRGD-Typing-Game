@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PopUpController : MonoBehaviour
 {
@@ -10,8 +12,9 @@ public class PopUpController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Assign popup text
-        popText = "example";
+        //Assign popup text and set visualization
+        //popText = "example";
+        this.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = popText;
 
         //Make this popup active (for now, until spawning/handling is finished)
         topLayer = true;

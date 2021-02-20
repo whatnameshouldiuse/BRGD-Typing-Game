@@ -60,12 +60,14 @@ public class PlayerTextTyper : MonoBehaviour
         //If the player presses enter, package and deliver current typed text for other scripts to check against
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            //Send input text as parameter to text comparison handler
+            //Package input for delivery to text comparison script
             finalText = textBox.text.ToString();
-            handlerScript.CompareText(finalText);
 
             //Empty input field for next player input
             inputBox.text = "";
+
+            //Run text comparison with packaged input text as parameter
+            handlerScript.CompareText(finalText);
         }
     }
 }

@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class TextComparison : MonoBehaviour
 {
     public List<GameObject> allPops = new List<GameObject>(); //List for all popups in level
     public List<GameObject> activePops = new List<GameObject>(); //List for all popups currently active/destroyable
+
+    public GameObject feedback; //The feedback text box (probably to be deleted/changed later)
 
     //public string playerText;   //The text input by the player
 
@@ -45,28 +49,52 @@ public class TextComparison : MonoBehaviour
 
         foreach (GameObject g in activePops)
         {
-            int hits = 0;       //How many correct characters
-            int miss = 0;       //How mnay wrong characters
+            float hits = 0;       //How many correct characters
+            float miss = 0;       //How mnay wrong characters
             float score = 0;    //The overall score for the popup
+            string newText = playerText;    //A separate instance of the input text for modifying
 
             //Get the popup's text string
             string popString = g.GetComponent<PopUpController>().popText;
 
+            //Add characters to make both strings the same length to prevent out-of-index
+            int charDiff = popString.Length - newText.Length;
+            if (charDiff > 0)
+            {
+                for(int i = 0; i < charDiff; i++)
+                {
+                    newText = newText + "~";
+                }
+            }
+            if (charDiff < 0)
+            {
+                for (int i = 0; i > charDiff; i--)
+                {
+                    popString = popString + "~";
+                }
+            }
+
+            //print(newText);
+            //print(popString);
+
             //Break up the string and compare character-for-character
             for (int i = 0; i < popString.Length; i++)
             {
-                if (popString[i] == playerText[i])
+                if (popString[i] == newText[i])
                 {
                     hits++;
+                    //print("hit");
                 }
                 else
                 {
                     miss++;
+                    //print("miss");
                 }
             }
 
             //Calculate score
             score = hits / (hits + miss);
+            print(score);
 
             //If score is highest so far, make this the selected popup and record the score for next comparison
             if(score > highScore)
@@ -76,9 +104,28 @@ public class TextComparison : MonoBehaviour
             }
         }
 
-        //If the winner had a high enough score, it counts and the popup is destroyed
-        if(highScore > 0.6)
+        //Feedback for the player based on score
+        if(highScore < 0.6)
         {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Miss!";
+        }
+        if (highScore >= 0.6 && highScore < 0.8)
+        {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Okay!";
+        }
+        if (highScore >= 0.8 && highScore < 1)
+        {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Great!";
+        }
+        if (highScore == 1)
+        {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Perfect!";
+        }
+
+        //If the winner had a high enough score, it counts and the popup is destroyed
+        if (highScore > 0.6)
+        {
+            activePops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner();
         }
     }
