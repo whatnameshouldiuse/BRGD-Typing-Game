@@ -32,19 +32,23 @@ public class PlayerTextTyper : MonoBehaviour
         //Delete character from input field afterward
         //As a result, "inputBox.text.ToString()" gives us the most recent player input on a per-character basis
         //We can then script around the input character using the "textTyped" string in any other script
-        if (inputBox.text != "")
-        {
-            textTyped = inputBox.text.ToString();
+        //if (inputBox.text != "")
+        //{
+        //    textTyped = inputBox.text.ToString();
 
-            //To make output field print all text typed per-character
-            textBox.text = textBox.text.ToString() + textTyped;
+        //    //To make output field print all text typed per-character
+        //    textBox.text = textBox.text.ToString() + textTyped;
 
-            //To make output field print only the latest character
-            //textBox.text = textTyped;
+        //    //To make output field print only the latest character
+        //    //textBox.text = textTyped;
 
-            //Reset input field
-            inputBox.text = "";
-        }
+        //    //Reset input field
+        //    inputBox.text = "";
+        //}
+
+        //Alternatively, just make the input box the input; this allows backspacing
+        //This removes per-character implementation but is acceptable for full-word submission implementations
+        textBox.text = inputBox.text;
 
         //If the player presses enter, package and deliver current typed text for other scripts to check against
         if (Input.GetKeyDown(KeyCode.Return))
