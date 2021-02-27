@@ -1,0 +1,2700 @@
+fileFormatVersion: 2
+guid: 30c78a366b66596449b18f626bbcb63d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -822050532104419379
+    second: zombocom-gif-larger_0
+  - first:
+      213: 3945713889286441359
+    second: zombocom-gif-larger_1
+  - first:
+      213: 6932600310156282829
+    second: zombocom-gif-larger_2
+  - first:
+      213: -3381392819595352502
+    second: zombocom-gif-larger_3
+  - first:
+      213: -8332950562679217687
+    second: zombocom-gif-larger_4
+  - first:
+      213: -1549047571820428846
+    second: zombocom-gif-larger_5
+  - first:
+      213: -358504098825714880
+    second: zombocom-gif-larger_6
+  - first:
+      213: 8568736502412698863
+    second: zombocom-gif-larger_7
+  - first:
+      213: 4368150679773117087
+    second: zombocom-gif-larger_8
+  - first:
+      213: 8410917460021362961
+    second: zombocom-gif-larger_9
+  - first:
+      213: 4201970391643227308
+    second: zombocom-gif-larger_10
+  - first:
+      213: 4715892790215420523
+    second: zombocom-gif-larger_11
+  - first:
+      213: 5104243388326902527
+    second: zombocom-gif-larger_12
+  - first:
+      213: 6203783374639070296
+    second: zombocom-gif-larger_13
+  - first:
+      213: 235064150857106303
+    second: zombocom-gif-larger_14
+  - first:
+      213: -8019826404713606504
+    second: zombocom-gif-larger_15
+  - first:
+      213: 6751333436709903755
+    second: zombocom-gif-larger_16
+  - first:
+      213: -3773184762100767463
+    second: zombocom-gif-larger_17
+  - first:
+      213: 6439644171554546947
+    second: zombocom-gif-larger_18
+  - first:
+      213: -222454632973403938
+    second: zombocom-gif-larger_19
+  - first:
+      213: 7935054540277625715
+    second: zombocom-gif-larger_20
+  - first:
+      213: -5349612918170398448
+    second: zombocom-gif-larger_21
+  - first:
+      213: -508308839665786639
+    second: zombocom-gif-larger_22
+  - first:
+      213: 1152153517310546217
+    second: zombocom-gif-larger_23
+  - first:
+      213: -604147081749459546
+    second: zombocom-gif-larger_24
+  - first:
+      213: -1350544816924964906
+    second: zombocom-gif-larger_25
+  - first:
+      213: 7756615056577383682
+    second: zombocom-gif-larger_26
+  - first:
+      213: -1099318000126758051
+    second: zombocom-gif-larger_27
+  - first:
+      213: -2987643810722988792
+    second: zombocom-gif-larger_28
+  - first:
+      213: -6035815096882694340
+    second: zombocom-gif-larger_29
+  - first:
+      213: 4548638478466203316
+    second: zombocom-gif-larger_30
+  - first:
+      213: 2238111748320377910
+    second: zombocom-gif-larger_31
+  - first:
+      213: 7181650768332730322
+    second: zombocom-gif-larger_32
+  - first:
+      213: 5562722955202310777
+    second: zombocom-gif-larger_33
+  - first:
+      213: -3399445983863886786
+    second: zombocom-gif-larger_34
+  - first:
+      213: -979695734428823789
+    second: zombocom-gif-larger_35
+  - first:
+      213: -6551810778277026047
+    second: zombocom-gif-larger_36
+  - first:
+      213: -4895642179976161355
+    second: zombocom-gif-larger_37
+  - first:
+      213: -2802731315470329708
+    second: zombocom-gif-larger_38
+  - first:
+      213: 4766465467347811999
+    second: zombocom-gif-larger_39
+  - first:
+      213: 7028900740631338120
+    second: zombocom-gif-larger_40
+  - first:
+      213: 3964388279276118101
+    second: zombocom-gif-larger_41
+  - first:
+      213: 6218729369485803304
+    second: zombocom-gif-larger_42
+  - first:
+      213: -2755454844807029101
+    second: zombocom-gif-larger_43
+  - first:
+      213: 4821289738128546301
+    second: zombocom-gif-larger_44
+  - first:
+      213: 2138319298547865237
+    second: zombocom-gif-larger_45
+  - first:
+      213: 2643355953008760871
+    second: zombocom-gif-larger_46
+  - first:
+      213: 9005898334684034684
+    second: zombocom-gif-larger_47
+  - first:
+      213: 8797377367042924437
+    second: zombocom-gif-larger_48
+  - first:
+      213: -5121345869597520381
+    second: zombocom-gif-larger_49
+  - first:
+      213: 688361943876234553
+    second: zombocom-gif-larger_50
+  - first:
+      213: -8503456842609008296
+    second: zombocom-gif-larger_51
+  - first:
+      213: -8334709285462634543
+    second: zombocom-gif-larger_52
+  - first:
+      213: 1098283790417079544
+    second: zombocom-gif-larger_53
+  - first:
+      213: 2394244256467904171
+    second: zombocom-gif-larger_54
+  - first:
+      213: 6184053937743985905
+    second: zombocom-gif-larger_55
+  - first:
+      213: -571443276207333856
+    second: zombocom-gif-larger_56
+  - first:
+      213: -6504324827597714939
+    second: zombocom-gif-larger_57
+  - first:
+      213: -525687141215251809
+    second: zombocom-gif-larger_58
+  - first:
+      213: 734813392876053841
+    second: zombocom-gif-larger_59
+  - first:
+      213: -2002823721064440080
+    second: zombocom-gif-larger_60
+  - first:
+      213: 851700301006155576
+    second: zombocom-gif-larger_61
+  - first:
+      213: -2579707735317673216
+    second: zombocom-gif-larger_62
+  - first:
+      213: -46621549166455134
+    second: zombocom-gif-larger_63
+  - first:
+      213: -4978373849908649245
+    second: zombocom-gif-larger_64
+  - first:
+      213: 992489626833536554
+    second: zombocom-gif-larger_65
+  - first:
+      213: 6860681751345079777
+    second: zombocom-gif-larger_66
+  - first:
+      213: 2549956857992299222
+    second: zombocom-gif-larger_67
+  - first:
+      213: 3504079913320355680
+    second: zombocom-gif-larger_68
+  - first:
+      213: -6859811424748262132
+    second: zombocom-gif-larger_69
+  - first:
+      213: 1441947069044505809
+    second: zombocom-gif-larger_70
+  - first:
+      213: -2286172012480353794
+    second: zombocom-gif-larger_71
+  - first:
+      213: -175996321944726944
+    second: zombocom-gif-larger_72
+  - first:
+      213: -3598806647545390904
+    second: zombocom-gif-larger_73
+  - first:
+      213: -1587890156731306477
+    second: zombocom-gif-larger_74
+  - first:
+      213: 6580516797116430623
+    second: zombocom-gif-larger_75
+  - first:
+      213: -7542551633717168690
+    second: zombocom-gif-larger_76
+  - first:
+      213: 4031400125733080933
+    second: zombocom-gif-larger_77
+  - first:
+      213: 4071250900426967150
+    second: zombocom-gif-larger_78
+  - first:
+      213: -1878053473266561066
+    second: zombocom-gif-larger_79
+  - first:
+      213: 2954263867790785235
+    second: zombocom-gif-larger_80
+  - first:
+      213: 2095547130008727895
+    second: zombocom-gif-larger_81
+  - first:
+      213: 4182247490124650745
+    second: zombocom-gif-larger_82
+  - first:
+      213: -7299972277927923038
+    second: zombocom-gif-larger_83
+  - first:
+      213: -1653640341804718187
+    second: zombocom-gif-larger_84
+  - first:
+      213: 4629175118876359054
+    second: zombocom-gif-larger_85
+  - first:
+      213: 7798534679121989754
+    second: zombocom-gif-larger_86
+  - first:
+      213: 3623454542547404750
+    second: zombocom-gif-larger_87
+  - first:
+      213: -9219588976241260141
+    second: zombocom-gif-larger_88
+  - first:
+      213: 7782225536021143678
+    second: zombocom-gif-larger_89
+  - first:
+      213: 7522223587790166169
+    second: zombocom-gif-larger_90
+  - first:
+      213: -6152655237139138779
+    second: zombocom-gif-larger_91
+  - first:
+      213: -2679208459489095834
+    second: zombocom-gif-larger_92
+  - first:
+      213: -272282854028785961
+    second: zombocom-gif-larger_93
+  - first:
+      213: 3519029142617678286
+    second: zombocom-gif-larger_94
+  - first:
+      213: -8027941150994361289
+    second: zombocom-gif-larger_95
+  - first:
+      213: 6237753405800081347
+    second: zombocom-gif-larger_96
+  - first:
+      213: -2780833666943672105
+    second: zombocom-gif-larger_97
+  - first:
+      213: 2435290102861506728
+    second: zombocom-gif-larger_98
+  - first:
+      213: 1363043487270515597
+    second: zombocom-gif-larger_99
+  - first:
+      213: 140975401294399739
+    second: zombocom-gif-larger_100
+  - first:
+      213: 3816189065858779046
+    second: zombocom-gif-larger_101
+  - first:
+      213: 4748568558559307831
+    second: zombocom-gif-larger_102
+  - first:
+      213: -6423506026463613032
+    second: zombocom-gif-larger_103
+  - first:
+      213: 4258416886859205953
+    second: zombocom-gif-larger_104
+  - first:
+      213: 6146832318266251313
+    second: zombocom-gif-larger_105
+  - first:
+      213: -6727510476729988194
+    second: zombocom-gif-larger_106
+  - first:
+      213: -1678701522800167348
+    second: zombocom-gif-larger_107
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zombocom-gif-larger_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7ce7e756d7794f0800000000000000
+      internalID: -822050532104419379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f894e3480edf1c630800000000000000
+      internalID: 3945713889286441359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbc0a8604b853060800000000000000
+      internalID: 6932600310156282829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4666fd5521e211d0800000000000000
+      internalID: -3381392819595352502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e12d94fc996b5c80800000000000000
+      internalID: -8332950562679217687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1467dc07da08ae0800000000000000
+      internalID: -1549047571820428846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043c8faeb66560bf0800000000000000
+      internalID: -358504098825714880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe46b3823744ae670800000000000000
+      internalID: 8568736502412698863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9af14956e9ce9c30800000000000000
+      internalID: 4368150679773117087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11144bfedd499b470800000000000000
+      internalID: 8410917460021362961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca48a96eec5605a30800000000000000
+      internalID: 4201970391643227308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6aad9fb187327140800000000000000
+      internalID: 4715892790215420523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa7c58715ae5d640800000000000000
+      internalID: 5104243388326902527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cf5d43c14481650800000000000000
+      internalID: 6203783374639070296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73444b899d134300800000000000000
+      internalID: 235064150857106303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8925fb2306ad3b090800000000000000
+      internalID: -8019826404713606504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d9f479dfd81bd50800000000000000
+      internalID: 6751333436709903755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91521173374f2abc0800000000000000
+      internalID: -3773184762100767463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_18
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3056c6d51463e5950800000000000000
+      internalID: 6439644171554546947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_19
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8fafe90bea9ecf0800000000000000
+      internalID: -222454632973403938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373399a001afe1e60800000000000000
+      internalID: 7935054540277625715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_21
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011dc96f46b52c5b0800000000000000
+      internalID: -5349612918170398448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0a78fadcf12f8f0800000000000000
+      internalID: -508308839665786639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_23
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921130605854dff00800000000000000
+      internalID: 1152153517310546217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad0c381e63ad97f0800000000000000
+      internalID: -604147081749459546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d741fdf4a6e14de0800000000000000
+      internalID: -1350544816924964906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dcdb23c4805ab60800000000000000
+      internalID: 7756615056577383682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5370437a107eb0f0800000000000000
+      internalID: -1099318000126758051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d367a88c1c986d0800000000000000
+      internalID: -2987643810722988792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_29
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37fd54062a7c3ca0800000000000000
+      internalID: -6035815096882694340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4beb6a0b892002f30800000000000000
+      internalID: 4548638478466203316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cb34ee6ce5f0f10800000000000000
+      internalID: 2238111748320377910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df2263e2595aa360800000000000000
+      internalID: 7181650768332730322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_33
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972beb02e03c23d40800000000000000
+      internalID: 5562722955202310777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_34
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c2aa283edb2d0d0800000000000000
+      internalID: -3399445983863886786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_35
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f87619beb6762f0800000000000000
+      internalID: -979695734428823789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107e8356fca4315a0800000000000000
+      internalID: -6551810778277026047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b71a13206f2f0cb0800000000000000
+      internalID: -4895642179976161355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4981784d7b2ba19d0800000000000000
+      internalID: -2802731315470329708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ebe67b613e52240800000000000000
+      internalID: 4766465467347811999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c9fce9bfbab8160800000000000000
+      internalID: 7028900740631338120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_41
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550a9f1c226540730800000000000000
+      internalID: 3964388279276118101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f7d7ec96d5d4650800000000000000
+      internalID: 6218729369485803304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_43
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ed5acea68a2c9d0800000000000000
+      internalID: -2755454844807029101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df95368f879a8e240800000000000000
+      internalID: 4821289738128546301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_45
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596de4e9216dcad10800000000000000
+      internalID: 2138319298547865237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_46
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7285002fb361fa420800000000000000
+      internalID: 2643355953008760871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_47
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76bf12f1d06bfc70800000000000000
+      internalID: 9005898334684034684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f97a5da10961a70800000000000000
+      internalID: 8797377367042924437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ec9bec0135de8b0800000000000000
+      internalID: -5121345869597520381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93de3a57a8d8d8900800000000000000
+      internalID: 688361943876234553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851ec6d0e07adf980800000000000000
+      internalID: -8503456842609008296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df89d5601a255c80800000000000000
+      internalID: -8334709285462634543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc2166d943ed3f00800000000000000
+      internalID: 1098283790417079544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6e94c47701a3120800000000000000
+      internalID: 2394244256467904171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcf517ba4c22d550800000000000000
+      internalID: 6184053937743985905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e50603e53d118f0800000000000000
+      internalID: -571443276207333856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_57
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ac84bd70ffbb5a0800000000000000
+      internalID: -6504324827597714939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_58
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92dfdc845264b8f0800000000000000
+      internalID: -525687141215251809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_59
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155a39a33e4923a00800000000000000
+      internalID: 734813392876053841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe5a36ef6a8434e0800000000000000
+      internalID: -2002823721064440080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fa09849e8d1db00800000000000000
+      internalID: 851700301006155576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b001c8b79033cd0800000000000000
+      internalID: -2579707735317673216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a61e03b2fd5a5ff0800000000000000
+      internalID: -46621549166455134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2e91d2c5349eab0800000000000000
+      internalID: -4978373849908649245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_65
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a264ca2ae0806cd00800000000000000
+      internalID: 992489626833536554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5ade114b9063f50800000000000000
+      internalID: 6860681751345079777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_67
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2c3398044436320800000000000000
+      internalID: 2549956857992299222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0679a02ad1ef0a030800000000000000
+      internalID: 3504079913320355680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_69
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0da6b1aadd0dc0a0800000000000000
+      internalID: -6859811424748262132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_70
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc30533833d20410800000000000000
+      internalID: 1441947069044505809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_71
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef92ba4daa2e540e0800000000000000
+      internalID: -2286172012480353794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06295b4174cbe8df0800000000000000
+      internalID: -175996321944726944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_73
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c81ebddb687e0ec0800000000000000
+      internalID: -3598806647545390904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ee0b1c05ea6f9e0800000000000000
+      internalID: -1587890156731306477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19bd927921b25b50800000000000000
+      internalID: 6580516797116430623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_76
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5fe345049735790800000000000000
+      internalID: -7542551633717168690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_77
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f09c91e0962f730800000000000000
+      internalID: 4031400125733080933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_78
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68407f9f1dff7830800000000000000
+      internalID: 4071250900426967150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_79
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df02c00150dfe5e0800000000000000
+      internalID: -1878053473266561066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_80
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3daf07cd557aff820800000000000000
+      internalID: 2954263867790785235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_81
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75172461301e41d10800000000000000
+      internalID: 2095547130008727895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_82
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f816ab0fe35a0a30800000000000000
+      internalID: 4182247490124650745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_83
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a238efd3e941ba90800000000000000
+      internalID: -7299972277927923038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5976978ded61d09e0800000000000000
+      internalID: -1653640341804718187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_85
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89b3b38e322e3040800000000000000
+      internalID: 4629175118876359054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7091a5e8f5f93c60800000000000000
+      internalID: 7798534679121989754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_87
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7405465b8194230800000000000000
+      internalID: 3623454542547404750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39948007ca07d0080800000000000000
+      internalID: -9219588976241260141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_89
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70a38c94e4000c60800000000000000
+      internalID: 7782225536021143678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_90
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9981c47af7e446860800000000000000
+      internalID: 7522223587790166169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_91
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527ffd4f8a06d9aa0800000000000000
+      internalID: -6152655237139138779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_92
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f4ee4e91a81dad0800000000000000
+      internalID: -2679208459489095834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_93
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d64f27df28a83cf0800000000000000
+      internalID: -272282854028785961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_94
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec169ff4c5a16d030800000000000000
+      internalID: 3519029142617678286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_95
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 88
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7349d399e06079090800000000000000
+      internalID: -8027941150994361289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7623d6ca3f09650800000000000000
+      internalID: 6237753405800081347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0206e638e7869d0800000000000000
+      internalID: -2780833666943672105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8a5122273ebc120800000000000000
+      internalID: 2435290102861506728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d833b2874d08ae210800000000000000
+      internalID: 1363043487270515597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8883c6168d4f100800000000000000
+      internalID: 140975401294399739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a70e328cb3d5f430800000000000000
+      internalID: 3816189065858779046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738248ce1fd46e140800000000000000
+      internalID: 4748568558559307831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_103
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f2e085d4f1bd6a0800000000000000
+      internalID: -6423506026463613032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d84c6b89fe81b30800000000000000
+      internalID: 4258416886859205953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_105
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13896281d6fed4550800000000000000
+      internalID: 6146832318266251313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b4ac38dd413a2a0800000000000000
+      internalID: -6727510476729988194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombocom-gif-larger_107
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 24
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46b691fbdd04b8e0800000000000000
+      internalID: -1678701522800167348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

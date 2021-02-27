@@ -15,7 +15,7 @@ public class TimerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeLimit = 10;                                         //Set time limit
+        timeLimit = 20;                                         //Set time limit
         timer = timeLimit;                                      //Set starting timer value
 
         text = this.gameObject.GetComponent<TextMeshProUGUI>(); //Get text component
