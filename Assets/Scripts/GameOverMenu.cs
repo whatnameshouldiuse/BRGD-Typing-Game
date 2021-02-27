@@ -21,12 +21,20 @@ public class GameOverMenu : MonoBehaviour
 
     public void Restart()
     {
+        //Destroy the game over handler object to prevent replication issues
+        GameObject gameOverObject = GameObject.Find("Win/Loss Handler");
+        Destroy(gameOverObject);
+
         //Reload the main game scene; treated as a new game
         SceneManager.LoadScene("MainScene");
     }
 
     public void MainMenu()
     {
+        //Destroy the game over handler object to prevent replication issues
+        GameObject gameOverObject = GameObject.Find("Win/Loss Handler");
+        Destroy(gameOverObject);
+
         //Load the main menu scene
         SceneManager.LoadScene("StartMenuScene");
     }
