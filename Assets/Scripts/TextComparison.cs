@@ -12,10 +12,28 @@ public class TextComparison : MonoBehaviour
     public GameObject feedback; //The feedback text box (probably to be deleted/changed later)
     public GameObject gameOverObject;//The handler for ending the game and scene management
 
+    public int adsLeft;         //How many ads are left in the game
+
     //public string playerText;   //The text input by the player
 
     // Start is called before the first frame update
     void Start()
+    {
+        gameOverObject = GameObject.Find("Win/Loss Handler");               //Assign game over handler
+        adsLeft = this.gameObject.GetComponent<PopUpManager>().StartCount;  //Set how many ads are left from starting spawn count
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //When the game runs out of popups to destroy, the player wins!
+        if (adsLeft == 0)
+        {
+            gameOverObject.GetComponent<GameOverController>().Victory();
+        }
+    }
+
+    public void MakeLists()
     {
         //Populate list of popups with all popups
         foreach (Transform child in transform)
@@ -29,25 +47,12 @@ public class TextComparison : MonoBehaviour
         //Populate list of active popups for starting layer
         foreach (GameObject g in allPops)
         {
-            if(g.GetComponent<PopUpController>().topLayer == true)
+            if (g.GetComponent<PopUpController>().topLayer == true)
             {
                 activePops.Add(g);
             }
         }
-
-        gameOverObject = GameObject.Find("Win/Loss Handler");//Assign game over handler
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //When the game runs out of popups to destroy, the player wins!
-        if (allPops.Count == 0)
-        {
-            gameOverObject.GetComponent<GameOverController>().Victory();
-        }
-    }
-
     public void CompareText(string playerText)
     {
         GameObject winner = activePops[0];  //The popup with the closest match; initialize with first in list

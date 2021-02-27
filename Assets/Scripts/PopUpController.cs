@@ -36,6 +36,9 @@ public class PopUpController : MonoBehaviour
         //Calculate the points the player earns and add them to the score total
         GameObject.Find("Win/Loss Handler").GetComponent<GameOverController>().playerScore += (score * scoreMod);
 
+        //Once score is sent off, reduce ad count in handler object by one
+        GameObject.Find("Popup Handler").GetComponent<TextComparison>().adsLeft--;
+
         //Calculate score and feed back into player's score
         Destroy(this.gameObject);
     }

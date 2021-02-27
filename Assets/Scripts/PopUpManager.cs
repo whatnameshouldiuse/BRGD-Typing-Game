@@ -78,5 +78,8 @@ public class PopUpManager : MonoBehaviour
             yield return new WaitForSecondsRealtime(StartPopUpTime);
         }
         _startRoutine = false;
+
+        //Send text comparison script go-ahead to tabulate popups into lists
+        this.gameObject.GetComponent<TextComparison>().MakeLists();
     }
 }
