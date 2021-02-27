@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameOverController : MonoBehaviour
 {
+    public float playerScore;   //The player's score as the game progresses
+    public float timeLeft;      //If the player wins, this is how much time was left
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Make this object survive game over so score stuff can persist to the post-game screen
+        DontDestroyOnLoad(this);
+
+        timeLeft = 0;   //If player loses, this prevents scripting issues
     }
 
     // Update is called once per frame
@@ -17,15 +23,20 @@ public class GameOverController : MonoBehaviour
         
     }
 
+    //If player destroys all popups before the timer runs out, they win!
     public void Victory()
     {
-        //If player destroys all popups before the timer runs out, load the victory scene
+        //Record how much time was left on the timer
+        timeLeft = GameObject.Find("Timer").GetComponent<TimerController>().timer;
+        
+        //Load the victory scene
         SceneManager.LoadScene("VictoryScene");
     }
 
+    //If timer runs out before player wins, they lose
     public void Defeat()
     {
-        //If timer runs out before player wins, load the defeat scene
+        //Load the defeat scene
         SceneManager.LoadScene("DefeatScene");
     }
 }

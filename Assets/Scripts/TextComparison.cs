@@ -52,6 +52,7 @@ public class TextComparison : MonoBehaviour
     {
         GameObject winner = activePops[0];  //The popup with the closest match; initialize with first in list
         float highScore = 0;    //The score of the winning popup; initialize with 0 (doesn't matter, first in list will override)
+        float scoremod = 0;     //The score modifier if the player successfully destroys a popup
 
         foreach (GameObject g in activePops)
         {
@@ -100,7 +101,7 @@ public class TextComparison : MonoBehaviour
 
             //Calculate score
             score = hits / (hits + miss);
-            print(score);
+            //print(score);
 
             //If score is highest so far, make this the selected popup and record the score for next comparison
             if(score > highScore)
@@ -110,7 +111,7 @@ public class TextComparison : MonoBehaviour
             }
         }
 
-        //Feedback for the player based on score
+        //Feedback for the player based on score and score modifier assignment
         if(highScore < 0.6)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Miss!";
@@ -118,22 +119,25 @@ public class TextComparison : MonoBehaviour
         if (highScore >= 0.6 && highScore < 0.8)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Okay!";
+            scoremod = 0.6f;
         }
         if (highScore >= 0.8 && highScore < 1)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Great!";
+            scoremod = 0.8f;
         }
         if (highScore == 1)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Perfect!";
+            scoremod = 1f;
         }
 
         //If the winner had a high enough score, it counts and the popup is destroyed
-        if (highScore > 0.6)
+        if (highScore >= 0.6)
         {
             activePops.Remove(winner);
             allPops.Remove(winner);
-            winner.GetComponent<PopUpController>().Winner();
+            winner.GetComponent<PopUpController>().Winner(scoremod);
         }
     }
 }
