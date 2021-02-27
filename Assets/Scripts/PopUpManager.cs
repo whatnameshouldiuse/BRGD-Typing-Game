@@ -18,10 +18,10 @@ public class PopUpManager : MonoBehaviour
 
     [Header("Spawn Range")]
     public float XMin = -5;
-    public float YMin = -5;
+    public float YMin = -1f;
     [Space]
     public float XMax = 5;
-    public float YMax = 5;
+    public float YMax = 2.5f;
 
     [Header("Popup Size")]
     public float MinWidth = 3;
@@ -67,6 +67,7 @@ public class PopUpManager : MonoBehaviour
         spawningObject.transform.SetParent(PopUpContainer.transform);
 
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), 0);
+
         spawningObject.GetComponent<PopUpController>().popText = _wordBank[Random.Range(0, _wordBank.Length)];
     }
 
