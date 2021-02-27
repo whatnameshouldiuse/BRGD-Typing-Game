@@ -10,6 +10,7 @@ public class TextComparison : MonoBehaviour
     public List<GameObject> activePops = new List<GameObject>(); //List for all popups currently active/destroyable
 
     public GameObject feedback; //The feedback text box (probably to be deleted/changed later)
+    public GameObject gameOverObject;//The handler for ending the game and scene management
 
     //public string playerText;   //The text input by the player
 
@@ -34,12 +35,17 @@ public class TextComparison : MonoBehaviour
             }
         }
 
+        gameOverObject = GameObject.Find("Win/Loss Handler");//Assign game over handler
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //When the game runs out of popups to destroy, the player wins!
+        if (allPops.Count == 0)
+        {
+            gameOverObject.GetComponent<GameOverController>().Victory();
+        }
     }
 
     public void CompareText(string playerText)
@@ -126,6 +132,7 @@ public class TextComparison : MonoBehaviour
         if (highScore > 0.6)
         {
             activePops.Remove(winner);
+            allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner();
         }
     }

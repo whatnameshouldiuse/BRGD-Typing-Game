@@ -19,7 +19,8 @@ public class GameOverController : MonoBehaviour
 
     public void Victory()
     {
-
+        //If player destroys all popups before the timer runs out, load the victory scene
+        SceneManager.LoadScene("VictoryScene");
     }
 
     public void Defeat()
