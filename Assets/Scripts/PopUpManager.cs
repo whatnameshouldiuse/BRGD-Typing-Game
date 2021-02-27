@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PopUpManager : MonoBehaviour
 {
+    [Header("Data")]
+    [Tooltip("Path to the text file of words to pull from")]
+    public TextAsset WordBank;
+
     [Header("Spawn Properties")]
     [Tooltip("Initial number of Pop-ups present when starting the game")]
     public int StartCount = 6;
@@ -30,7 +34,13 @@ public class PopUpManager : MonoBehaviour
     public GameObject PopUpContainer;
     public GameObject[] PopUpList;
 
+    private string[] _wordBank;
     private bool _startRoutine = true;
+
+    void Awake() 
+    {
+        _wordBank = WordBank.text.Split('\n');
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -57,8 +67,7 @@ public class PopUpManager : MonoBehaviour
         spawningObject.transform.SetParent(PopUpContainer.transform);
 
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), 0);
-        SpriteRenderer objectRend = spawningObject.GetComponent<SpriteRenderer>();
-        objectRend.size = new Vector2(Random.Range(MinWidth, MaxWidth), Random.Range(MinHeight, MaxHeight));
+        spawningObject.GetComponent<PopUpController>().popText = _wordBank[Random.Range(0, _wordBank.Length)];
     }
 
     IEnumerator StartPopulate()
