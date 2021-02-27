@@ -21,13 +21,22 @@ public class ScoreReporter : MonoBehaviour
         score = gameOverScript.playerScore;                                 //Get score
         time = gameOverScript.timeLeft;                                     //Get time left (0 if player loses)
 
-        //Set score readout
-        GameObject.Find("Score Readout").GetComponent<TextMeshProUGUI>().text = "Score: " + score;
-
-        //If the player wins, set the time readout; shouldn't proc if player loses
+        //If the player wins
         if(time != 0)
         {
-            GameObject.Find("Time Left Readout").GetComponent<TextMeshProUGUI>().text = "Time left: " + time;
+            //Add time bonus to score
+            score += (Mathf.RoundToInt(time)) * 100;
+
+            //Set score and time readouts
+            GameObject.Find("Score Readout").GetComponent<TextMeshProUGUI>().text = "Score: " + score;
+            GameObject.Find("Time Left Readout").GetComponent<TextMeshProUGUI>().text = "Time left: " + time + " seconds!";
+        }
+
+        //If the player loses
+        else
+        {
+            //Set score readout
+            GameObject.Find("Score Readout").GetComponent<TextMeshProUGUI>().text = "Score: " + score;
         }
     }
 

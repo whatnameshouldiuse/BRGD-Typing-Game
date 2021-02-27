@@ -101,7 +101,7 @@ public class TextComparison : MonoBehaviour
 
             //Calculate score
             score = hits / (hits + miss);
-            print(score);
+            //print(score);
 
             //If score is highest so far, make this the selected popup and record the score for next comparison
             if(score > highScore)
