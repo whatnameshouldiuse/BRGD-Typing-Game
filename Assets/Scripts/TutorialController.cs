@@ -25,7 +25,7 @@ public class TutorialController : MonoBehaviour
         popText = "start";
 
         //Assign popup text and set visualization
-        this.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = "Type \"" + popText + "\" to start!";
+        this.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = "Type \"" + popText + "\" to start! (press Enter to submit)";
 
         //Make this popup active (for now, until spawning/handling is finished)
         topLayer = true;

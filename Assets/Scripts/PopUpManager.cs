@@ -49,6 +49,9 @@ public class PopUpManager : MonoBehaviour
     void Start()
     {
         //StartCoroutine(StartPopulate());
+
+        //Set time to 0 so timer doesn't start until the end of the spawning routine
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
@@ -99,5 +102,8 @@ public class PopUpManager : MonoBehaviour
 
         //Send text comparison script go-ahead to tabulate popups into lists
         this.gameObject.GetComponent<TextComparison>().MakeLists();
+
+        //Start time so the timer will start
+        Time.timeScale = 1;
     }
 }

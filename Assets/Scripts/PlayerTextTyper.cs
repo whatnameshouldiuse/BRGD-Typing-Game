@@ -75,12 +75,12 @@ public class PlayerTextTyper : MonoBehaviour
             if (tutorialScript.tutorial == true)
             {
                 //Run modified text comparison in TextComparison
-                handlerScript.TutorialCompare(finalText);
+                handlerScript.TutorialCompare2(finalText);
             }
             else
             {
                 //Run text comparison with packaged input text as parameter
-                handlerScript.CompareText(finalText);
+                handlerScript.CompareText2(finalText);
             }
 
         }

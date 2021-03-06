@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class TextComparison : MonoBehaviour
 {
@@ -61,11 +62,14 @@ public class TextComparison : MonoBehaviour
             }
         }
     }
+
+    //The original text comparison algorithm improvised by Toby
     public void CompareText(string playerText)
     {
         GameObject winner = activePops[0];  //The popup with the closest match; initialize with first in list
         float highScore = 0;    //The score of the winning popup; initialize with 0 (doesn't matter, first in list will override)
         float scoremod = 0;     //The score modifier if the player successfully destroys a popup
+        float oldLayer = 100;     //Layer variable for the current winner of the loop; lower z coordinates are incentivized
 
         foreach (GameObject g in activePops)
         {
@@ -117,10 +121,12 @@ public class TextComparison : MonoBehaviour
             //print(score);
 
             //If score is highest so far, make this the selected popup and record the score for next comparison
-            if(score > highScore)
+            //Also check layering so hidden popups don't get selected instead
+            if(score >= highScore && g.transform.position.z < oldLayer)
             {
                 highScore = score;
                 winner = g;
+                oldLayer = g.transform.position.z;
             }
         }
 
@@ -152,6 +158,124 @@ public class TextComparison : MonoBehaviour
             allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner(scoremod);
         }
+    }
+
+    //The second attempt at a text comparison algorithm, using Damerau-Levenshtein
+    public void CompareText2(string playerText)
+    {
+        GameObject winner = activePops[0];  //The popup with the closest match; initialize with first in list
+        int highScore = 999;    //The score of the winning popup; initialize with 999 so the first score overrides
+        float scoremod = 0;     //The score modifier if the player successfully destroys a popup
+        float oldLayer = 100;     //Layer variable for the current winner of the loop; lower z coordinates are incentivized
+
+        foreach (GameObject g in activePops)
+        {
+            //Get the popup's text string
+            string popString = g.GetComponent<PopUpController>().popText;
+
+            //Run Damerau-Levenshtein comparing the player string with the popup string
+            int score = DamerauLevenshtein(playerText, popString);
+
+            //If score is best so far, make this the selected popup and record the score for next comparison
+            //Also check layering so hidden popups don't get selected instead
+            if (score <= highScore && g.transform.position.z < oldLayer)
+            {
+                highScore = score;
+                winner = g;
+                oldLayer = g.transform.position.z;
+            }
+        }
+
+        print(highScore);
+        print(winner.GetComponent<PopUpController>().popText);
+        print(playerText);
+
+        //Feedback for the player based on score and score modifier assignment
+        if (highScore >= 3)
+        {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Miss!";
+        }
+        if (highScore == 2)
+        {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Okay!";
+            scoremod = 0.6f;
+        }
+        if (highScore == 1)
+        {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Great!";
+            scoremod = 0.8f;
+        }
+        if (highScore == 0)
+        {
+            feedback.GetComponent<TextMeshProUGUI>().text = "Perfect!";
+            scoremod = 1f;
+        }
+
+        //If the winner had a good enough score, it counts and the popup is destroyed
+        if (highScore < 3)
+        {
+            activePops.Remove(winner);
+            allPops.Remove(winner);
+            winner.GetComponent<PopUpController>().Winner(scoremod);
+        }
+    }
+
+    //A ripped-off implementation of the Damerau-Levenshtein string comparison algorithm
+    int DamerauLevenshtein(string input1, string input2)
+    {
+        string string1 = input1;
+        string string2 = input2;
+
+        if (String.IsNullOrEmpty(string1))
+        {
+            if (!String.IsNullOrEmpty(string2))
+                return string2.Length;
+
+            return 0;
+        }
+
+        if (String.IsNullOrEmpty(string2))
+        {
+            if (!String.IsNullOrEmpty(string1))
+                return string1.Length;
+
+            return 0;
+        }
+
+        int length1 = string1.Length;
+        int length2 = string2.Length;
+
+        int[,] d = new int[length1 + 1, length2 + 1];
+
+        int cost, del, ins, sub;
+
+        for (int i = 0; i <= d.GetUpperBound(0); i++)
+            d[i, 0] = i;
+
+        for (int i = 0; i <= d.GetUpperBound(1); i++)
+            d[0, i] = i;
+
+        for (int i = 1; i <= d.GetUpperBound(0); i++)
+        {
+            for (int j = 1; j <= d.GetUpperBound(1); j++)
+            {
+                if (string1[i - 1] == string2[j - 1])
+                    cost = 0;
+                else
+                    cost = 1;
+
+                del = d[i - 1, j] + 1;
+                ins = d[i, j - 1] + 1;
+                sub = d[i - 1, j - 1] + cost;
+
+                d[i, j] = Math.Min(del, Math.Min(ins, sub));
+
+                if (i > 1 && j > 1 && string1[i - 1] == string2[j - 2] && string1[i - 2] == string2[j - 1])
+                    d[i, j] = Math.Min(d[i, j], d[i - 2, j - 2] + cost);
+            }
+        }
+
+        return d[d.GetUpperBound(0), d.GetUpperBound(1)];
     }
 
     public void TutorialCompare(string playerText)
@@ -205,6 +329,15 @@ public class TextComparison : MonoBehaviour
 
         //If the winner had a high enough score, it counts and the popup is destroyed
         if (score == 1)
+        {
+            tutorialScript.Winner();
+        }
+    }
+
+    public void TutorialCompare2(string playerText)
+    {
+        //If the winner had a high enough score, it counts and the popup is destroyed
+        if (playerText == tutorialScript.popText)
         {
             tutorialScript.Winner();
         }
