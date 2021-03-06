@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WordBank: {fileID: 4900000, guid: f30bcc22c86b842e5bf061d7d25486fd, type: 3}
-  StartCount: 6
+  StartCount: 50
   StartPopUpTime: 0.1
   PopUpTime: 2
   XMin: -5

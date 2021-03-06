@@ -12,8 +12,11 @@ public class PlayerTextTyper : MonoBehaviour
     public TMP_InputField inputBox; //The text input field
     public TextMeshProUGUI textBox; //The text display for the player's input
 
-    public GameObject popHandler;   //The popup handler object
-    public TextComparison handlerScript; //The script for comparing player text to popup text
+    public GameObject popHandler;           //The popup handler object
+    public TextComparison handlerScript;    //The script for comparing player text to popup text
+
+    public GameObject tutorialPopup;            //The tutorial popup object
+    public TutorialController tutorialScript;   //The script for managing the tutorial
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,9 @@ public class PlayerTextTyper : MonoBehaviour
 
         popHandler = GameObject.Find("Popup Handler");                          //Get handler object for popups
         handlerScript = popHandler.GetComponent<TextComparison>();              //Get script for popup handler
+
+        tutorialPopup = GameObject.Find("TutorialPopup");                       //Get tutorial object
+        tutorialScript = tutorialPopup.GetComponent<TutorialController>();      //Get tutorial script
     }
 
     // Update is called once per frame
@@ -66,8 +72,17 @@ public class PlayerTextTyper : MonoBehaviour
             //Empty input field for next player input
             inputBox.text = "";
 
-            //Run text comparison with packaged input text as parameter
-            handlerScript.CompareText(finalText);
+            if (tutorialScript.tutorial == true)
+            {
+                //Run modified text comparison in TextComparison
+                handlerScript.TutorialCompare(finalText);
+            }
+            else
+            {
+                //Run text comparison with packaged input text as parameter
+                handlerScript.CompareText(finalText);
+            }
+
         }
     }
 }

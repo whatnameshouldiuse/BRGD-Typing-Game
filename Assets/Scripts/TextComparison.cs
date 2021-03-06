@@ -14,6 +14,11 @@ public class TextComparison : MonoBehaviour
 
     public int adsLeft;         //How many ads are left in the game
 
+    public GameObject tutorialPopup;            //The tutorial popup object
+    public TutorialController tutorialScript;   //The script for managing the tutorial
+
+
+
     //public string playerText;   //The text input by the player
 
     // Start is called before the first frame update
@@ -21,6 +26,9 @@ public class TextComparison : MonoBehaviour
     {
         gameOverObject = GameObject.Find("Win/Loss Handler");               //Assign game over handler
         adsLeft = this.gameObject.GetComponent<PopUpManager>().StartCount;  //Set how many ads are left from starting spawn count
+
+        tutorialPopup = GameObject.Find("TutorialPopup");                       //Get tutorial object
+        tutorialScript = tutorialPopup.GetComponent<TutorialController>();      //Get tutorial script
     }
 
     // Update is called once per frame
@@ -143,6 +151,62 @@ public class TextComparison : MonoBehaviour
             activePops.Remove(winner);
             allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner(scoremod);
+        }
+    }
+
+    public void TutorialCompare(string playerText)
+    {
+        float hits = 0;         //How many correct characters
+        float miss = 0;         //How mnay wrong characters
+        float score = 0;        //The overall score for the popup
+        string newText = playerText;    //A separate instance of the input text for modifying
+
+        //Get the popup's text string
+        string popString = tutorialScript.popText;
+
+        //Add characters to make both strings the same length to prevent out-of-index
+        int charDiff = popString.Length - newText.Length;
+        if (charDiff > 0)
+        {
+            for (int i = 0; i < charDiff; i++)
+            {
+                newText = newText + "~";
+            }
+        }
+        if (charDiff < 0)
+        {
+            for (int i = 0; i > charDiff; i--)
+            {
+                popString = popString + "~";
+            }
+        }
+
+        //print(newText);
+        //print(popString);
+
+        //Break up the string and compare character-for-character
+        for (int i = 0; i < popString.Length; i++)
+        {
+            if (popString[i] == newText[i])
+            {
+                hits++;
+                //print("hit");
+            }
+            else
+            {
+                miss++;
+                //print("miss");
+            }
+        }
+
+        //Calculate score
+        score = hits / (hits + miss);
+        //print(score);
+
+        //If the winner had a high enough score, it counts and the popup is destroyed
+        if (score == 1)
+        {
+            tutorialScript.Winner();
         }
     }
 }

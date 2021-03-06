@@ -48,7 +48,7 @@ public class PopUpManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(StartPopulate());
+        //StartCoroutine(StartPopulate());
     }
 
     // Update is called once per frame
@@ -79,6 +79,12 @@ public class PopUpManager : MonoBehaviour
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), layer);
 
         spawningObject.GetComponent<PopUpController>().popText = _wordBank[Random.Range(0, _wordBank.Length)];
+    }
+
+    public void StartGame()
+    {
+        //Once the tutorial is complete, begin the real game from here
+        StartCoroutine(StartPopulate());
     }
 
     IEnumerator StartPopulate()
