@@ -59,14 +59,19 @@ public class PopUpManager : MonoBehaviour
         }
     }
 
-    private void CreatePopUp()
+    private void CreatePopUp(int i)
     {
+        //Calculate the layer of the next popup
+        //Current depth range for popups: 10 - 60
+        //This isn't hardcoded; just a convention to prevent layering conflicts in the scene
+        int layer = (60 - i);
+
         GameObject spawningObject_prefab = PopUpList[Random.Range(0, PopUpList.Length)];
 
         GameObject spawningObject = Instantiate(spawningObject_prefab);
         spawningObject.transform.SetParent(PopUpContainer.transform);
 
-        spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), 0);
+        spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), layer);
 
         spawningObject.GetComponent<PopUpController>().popText = _wordBank[Random.Range(0, _wordBank.Length)];
     }
@@ -75,7 +80,7 @@ public class PopUpManager : MonoBehaviour
     {
         for (int i = 0; i < StartCount; i++)
         {
-            CreatePopUp();
+            CreatePopUp(i);
             yield return new WaitForSecondsRealtime(StartPopUpTime);
         }
         _startRoutine = false;
