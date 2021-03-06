@@ -10,7 +10,7 @@ public class PopUpManager : MonoBehaviour
 
     [Header("Spawn Properties")]
     [Tooltip("Initial number of Pop-ups present when starting the game")]
-    public int StartCount = 6;
+    public int StartCount = 50;
     [Tooltip("The time between each Pop-ups, in seconds, at the start of the game")]
     public float StartPopUpTime = 0.1f;
     [Tooltip("The time between each Pop-ups, in seconds")]
