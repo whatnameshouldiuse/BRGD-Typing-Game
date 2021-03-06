@@ -37,6 +37,9 @@ public class PopUpManager : MonoBehaviour
     private string[] _wordBank;
     private bool _startRoutine = true;
 
+    //Layer iterator to determine next popup's z coordinate (newer = closer to the screen)
+    int layer = 0;
+
     void Awake() 
     {
         _wordBank = WordBank.text.Split('\n');
@@ -55,16 +58,18 @@ public class PopUpManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !_startRoutine)
         {
-            CreatePopUp();
+            CreatePopUp(layer);
+            layer++;
         }
     }
 
-    private void CreatePopUp(int i)
+    private void CreatePopUp(int layerRef)
     {
         //Calculate the layer of the next popup
         //Current depth range for popups: 10 - 60
         //This isn't hardcoded; just a convention to prevent layering conflicts in the scene
-        int layer = (60 - i);
+        //As such, try to spawn fewer than 50 popups (this can be changed to any number!)
+        int layer = (60 - layerRef);
 
         GameObject spawningObject_prefab = PopUpList[Random.Range(0, PopUpList.Length)];
 
@@ -80,8 +85,9 @@ public class PopUpManager : MonoBehaviour
     {
         for (int i = 0; i < StartCount; i++)
         {
-            CreatePopUp(i);
+            CreatePopUp(layer);
             yield return new WaitForSecondsRealtime(StartPopUpTime);
+            layer++;
         }
         _startRoutine = false;
 
