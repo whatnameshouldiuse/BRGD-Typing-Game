@@ -191,21 +191,21 @@ public class TextComparison : MonoBehaviour
         print(playerText);
 
         //Feedback for the player based on score and score modifier assignment
-        if (highScore >= 3)
+        if (highScore >= 4)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Miss!";
         }
-        if (highScore == 2)
+        if (highScore == 3)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Okay!";
             scoremod = 0.6f;
         }
-        if (highScore == 1)
+        if (highScore == 2)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Great!";
             scoremod = 0.8f;
         }
-        if (highScore == 0)
+        if (highScore <= 1)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Perfect!";
             scoremod = 1f;
