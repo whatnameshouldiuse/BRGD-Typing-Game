@@ -18,7 +18,8 @@ public class TextComparison : MonoBehaviour
     public GameObject tutorialPopup;            //The tutorial popup object
     public TutorialController tutorialScript;   //The script for managing the tutorial
 
-
+    public AudioSource sound;                   //Audio source
+    public AudioClip deleteSound;               //Sound effect for deleting a popup
 
     //public string playerText;   //The text input by the player
 
@@ -30,6 +31,8 @@ public class TextComparison : MonoBehaviour
 
         tutorialPopup = GameObject.Find("TutorialPopup");                       //Get tutorial object
         tutorialScript = tutorialPopup.GetComponent<TutorialController>();      //Get tutorial script
+
+        sound = this.gameObject.GetComponent<AudioSource>();                //Get audio source
     }
 
     // Update is called once per frame
@@ -157,6 +160,7 @@ public class TextComparison : MonoBehaviour
             activePops.Remove(winner);
             allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner(scoremod);
+            sound.PlayOneShot(deleteSound);
         }
     }
 
@@ -217,6 +221,7 @@ public class TextComparison : MonoBehaviour
             activePops.Remove(winner);
             allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner(scoremod);
+            sound.PlayOneShot(deleteSound);
         }
     }
 

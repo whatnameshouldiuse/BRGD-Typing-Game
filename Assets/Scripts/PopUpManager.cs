@@ -40,6 +40,13 @@ public class PopUpManager : MonoBehaviour
     //Layer iterator to determine next popup's z coordinate (newer = closer to the screen)
     int layer = 0;
 
+    //Audio source for spawning sound effects
+    public AudioSource sound;
+    public AudioClip spawnsound;
+
+    //Background music audio source
+    public AudioSource bgsound;
+
     void Awake() 
     {
         _wordBank = WordBank.text.Split('\n');
@@ -52,6 +59,10 @@ public class PopUpManager : MonoBehaviour
 
         //Set time to 0 so timer doesn't start until the end of the spawning routine
         Time.timeScale = 0;
+
+        //Set audiosources
+        sound = this.gameObject.GetComponent<AudioSource>();
+        bgsound = GameObject.Find("Music Handler").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -95,10 +106,14 @@ public class PopUpManager : MonoBehaviour
         for (int i = 0; i < StartCount; i++)
         {
             CreatePopUp(layer);
+            sound.PlayOneShot(spawnsound);
             yield return new WaitForSecondsRealtime(StartPopUpTime);
             layer++;
         }
         _startRoutine = false;
+
+        //Start the music once popups are all spawned
+        bgsound.Play();
 
         //Send text comparison script go-ahead to tabulate popups into lists
         this.gameObject.GetComponent<TextComparison>().MakeLists();

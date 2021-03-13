@@ -11,7 +11,6 @@ public class CursorController : MonoBehaviour
     public AudioClip clickup;
 
     //Boolean for when a button is being clicked
-    //Not sure what this does but it was important in the last project so I'll keep it for now
     bool buttonclick;
 
     // Start is called before the first frame update
