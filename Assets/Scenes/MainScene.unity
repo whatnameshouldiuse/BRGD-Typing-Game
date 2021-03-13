@@ -1356,17 +1356,21 @@ MonoBehaviour:
   StartCount: 50
   StartPopUpTime: 0.1
   PopUpTime: 2
-  XMin: -5
-  YMin: -1
-  XMax: 5
-  YMax: 2.5
+  XMin: 7
+  YMin: -4.5
+  XMax: -7
+  YMax: 4.5
   MinWidth: 3
   MinHeight: 3
   MaxWidth: 7
-  MaxHeight: 7
+  MaxHeight: 6
   PopUpContainer: {fileID: 1634625314}
   PopUpList:
-  - {fileID: 4549856148374626459, guid: c4cd1304dff606e4d9a275c61e3b221a, type: 3}
+  - {fileID: 1662200461892703535, guid: 33f059531236b485e833b413c57ca985, type: 3}
+  - {fileID: 7823276589108475170, guid: 57b1d0241dac84b48b64ae4ff54ea225, type: 3}
+  - {fileID: 2667324469773238982, guid: b585e6dd2804b491b818cc7046b0a89b, type: 3}
+  - {fileID: 5544208593946358817, guid: 8594f05d6c98749528e4e7d724bab990, type: 3}
+  - {fileID: 5797578358617577790, guid: 41b227f56add24cc68d8605ebac8aed7, type: 3}
   sound: {fileID: 0}
   spawnsound: {fileID: 8300000, guid: 734850534efae3441939a02609f12385, type: 3}
   bgsound: {fileID: 0}
