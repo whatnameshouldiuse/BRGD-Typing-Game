@@ -1323,6 +1323,8 @@ MonoBehaviour:
   adsLeft: 0
   tutorialPopup: {fileID: 0}
   tutorialScript: {fileID: 0}
+  sound: {fileID: 0}
+  deleteSound: {fileID: 8300000, guid: 9d0cdd688d61fae4f9160ad200e149bf, type: 3}
 --- !u!4 &1634625316
 Transform:
   m_ObjectHideFlags: 0
@@ -1367,6 +1369,7 @@ MonoBehaviour:
   - {fileID: 4549856148374626459, guid: c4cd1304dff606e4d9a275c61e3b221a, type: 3}
   sound: {fileID: 0}
   spawnsound: {fileID: 8300000, guid: 734850534efae3441939a02609f12385, type: 3}
+  bgsound: {fileID: 0}
 --- !u!82 &1634625318
 AudioSource:
   m_ObjectHideFlags: 0
