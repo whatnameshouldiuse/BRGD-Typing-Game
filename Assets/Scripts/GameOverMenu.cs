@@ -47,4 +47,10 @@ public class GameOverMenu : MonoBehaviour
         //Cute message for now because why not?
         GameObject.Find("MainMenuLogo").GetComponent<TextMeshProUGUI>().text = "You cannot quit TYPERSPACE";
     }
+
+    public void Credits()
+    {
+        //Go to credits scene
+        SceneManager.LoadScene("CreditsScene");
+    }
 }
