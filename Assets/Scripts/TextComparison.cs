@@ -21,6 +21,12 @@ public class TextComparison : MonoBehaviour
     public AudioSource sound;                   //Audio source
     public AudioClip deleteSound;               //Sound effect for deleting a popup
 
+    [Header("Clear Score Sound Effects")]
+    public AudioClip PerfectSound;
+    public AudioClip GreatSound;
+    public AudioClip OkaySound;
+    public AudioClip MissSound;
+
     //public string playerText;   //The text input by the player
 
     // Start is called before the first frame update
@@ -198,20 +204,24 @@ public class TextComparison : MonoBehaviour
         if (highScore >= 4)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Miss!";
+            sound.PlayOneShot(MissSound);
         }
         if (highScore == 3)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Okay!";
+            sound.PlayOneShot(OkaySound);
             scoremod = 0.6f;
         }
         if (highScore == 2)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Great!";
+            sound.PlayOneShot(GreatSound);
             scoremod = 0.8f;
         }
         if (highScore <= 1)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Perfect!";
+            sound.PlayOneShot(PerfectSound);
             scoremod = 1f;
         }
 
