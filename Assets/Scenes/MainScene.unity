@@ -562,7 +562,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c6012040d18e8734690171428984e234, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6bbf85545ee769048a0693e50bd2a9c9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1325,6 +1325,10 @@ MonoBehaviour:
   tutorialScript: {fileID: 0}
   sound: {fileID: 0}
   deleteSound: {fileID: 8300000, guid: 9d0cdd688d61fae4f9160ad200e149bf, type: 3}
+  PerfectSound: {fileID: 0}
+  GreatSound: {fileID: 0}
+  OkaySound: {fileID: 0}
+  MissSound: {fileID: 0}
 --- !u!4 &1634625316
 Transform:
   m_ObjectHideFlags: 0
@@ -1357,13 +1361,14 @@ MonoBehaviour:
   StartPopUpTime: 0.1
   PopUpTime: 2
   XMin: 7
-  YMin: -4.5
+  YMin: -1.5
   XMax: -7
   YMax: 4.5
   MinWidth: 3
   MinHeight: 3
   MaxWidth: 7
   MaxHeight: 6
+  scaleFactor: 0
   PopUpContainer: {fileID: 1634625314}
   PopUpList:
   - {fileID: 1662200461892703535, guid: 33f059531236b485e833b413c57ca985, type: 3}

@@ -18,7 +18,7 @@ public class PopUpManager : MonoBehaviour
 
     [Header("Spawn Range")]
     public float XMin = -5;
-    public float YMin = -1f;
+    public float YMin = 0f;
     [Space]
     public float XMax = 5;
     public float YMax = 2.5f;
@@ -29,6 +29,9 @@ public class PopUpManager : MonoBehaviour
     [Space]
     public float MaxWidth = 7;
     public float MaxHeight = 7;
+
+    //Scaling factor to make all popups slightly smaller
+    public float scaleFactor;
 
     [Header("Pop-Up Game Objects")]
     public GameObject PopUpContainer;
@@ -59,6 +62,9 @@ public class PopUpManager : MonoBehaviour
 
         //Set time to 0 so timer doesn't start until the end of the spawning routine
         Time.timeScale = 0;
+
+        //Set scale factor
+        scaleFactor = 0.6f;
 
         //Set audiosources
         sound = this.gameObject.GetComponent<AudioSource>();
@@ -91,6 +97,7 @@ public class PopUpManager : MonoBehaviour
         spawningObject.transform.SetParent(PopUpContainer.transform);
 
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), layer);
+        spawningObject.transform.localScale = spawningObject.transform.localScale * scaleFactor;
 
         spawningObject.GetComponent<PopUpController>().popText = _wordBank[Random.Range(0, _wordBank.Length)];
     }
