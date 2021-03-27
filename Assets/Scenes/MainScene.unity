@@ -1325,10 +1325,10 @@ MonoBehaviour:
   tutorialScript: {fileID: 0}
   sound: {fileID: 0}
   deleteSound: {fileID: 8300000, guid: 9d0cdd688d61fae4f9160ad200e149bf, type: 3}
-  PerfectSound: {fileID: 0}
-  GreatSound: {fileID: 0}
-  OkaySound: {fileID: 0}
-  MissSound: {fileID: 0}
+  PerfectSound: {fileID: 8300000, guid: 4582e073d07234d708c43c11c0855b7c, type: 3}
+  GreatSound: {fileID: 8300000, guid: b6e20eaf06c9b472b9c28b239c71ac55, type: 3}
+  OkaySound: {fileID: 8300000, guid: 04bc3ef7c2baf4d8586d3b423bc3c8cb, type: 3}
+  MissSound: {fileID: 8300000, guid: 4e497aa3530264e09a6eeeba96d6d112, type: 3}
 --- !u!4 &1634625316
 Transform:
   m_ObjectHideFlags: 0
