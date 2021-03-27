@@ -75,7 +75,7 @@ public class PopUpManager : MonoBehaviour
         Time.timeScale = 0;
 
         //Set scale factor
-        scaleFactor = 0.6f;
+        scaleFactor = 0.46f;
 
         //Set audiosources
         sound = this.gameObject.GetComponent<AudioSource>();
