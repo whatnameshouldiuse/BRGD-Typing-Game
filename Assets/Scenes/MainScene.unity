@@ -1356,7 +1356,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3126a4ef65316483a82197176b12e500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WordBank: {fileID: 4900000, guid: f30bcc22c86b842e5bf061d7d25486fd, type: 3}
+  WordBankEasy: {fileID: 4900000, guid: ede2c059730e30447bbc8b126cfec4b1, type: 3}
+  WordBankMedium: {fileID: 4900000, guid: a35318bbb9437394db3478897e326d7a, type: 3}
+  WordBankHard: {fileID: 4900000, guid: 4cdc71da8a321c546a7b6c5d11ef5abd, type: 3}
   StartCount: 50
   StartPopUpTime: 0.1
   PopUpTime: 2

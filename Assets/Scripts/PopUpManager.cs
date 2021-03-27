@@ -6,7 +6,10 @@ public class PopUpManager : MonoBehaviour
 {
     [Header("Data")]
     [Tooltip("Path to the text file of words to pull from")]
-    public TextAsset WordBank;
+    public TextAsset WordBankEasy;
+    public TextAsset WordBankMedium;
+    public TextAsset WordBankHard;
+    //public TextAsset WordBank;
 
     [Header("Spawn Properties")]
     [Tooltip("Initial number of Pop-ups present when starting the game")]
@@ -38,6 +41,11 @@ public class PopUpManager : MonoBehaviour
     public GameObject[] PopUpList;
 
     private string[] _wordBank;
+    private string[] _easyWords;
+    private string[] _medWords;
+    private string[] _hardWords;
+    string[] currentBank;
+
     private bool _startRoutine = true;
 
     //Layer iterator to determine next popup's z coordinate (newer = closer to the screen)
@@ -52,7 +60,10 @@ public class PopUpManager : MonoBehaviour
 
     void Awake() 
     {
-        _wordBank = WordBank.text.Split('\n');
+        //_wordBank = WordBank.text.Split('\n');
+        _easyWords = WordBankEasy.text.Split('\n');
+        _medWords  = WordBankMedium.text.Split('\n');
+        _hardWords = WordBankHard.text.Split('\n');
     }
 
     // Start is called before the first frame update
@@ -78,12 +89,12 @@ public class PopUpManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !_startRoutine)
         {
-            CreatePopUp(layer);
+            CreatePopUp(layer, _easyWords);
             layer++;
         }
     }
 
-    private void CreatePopUp(int layerRef)
+    private void CreatePopUp(int layerRef, string[] wordBank)
     {
         //Calculate the layer of the next popup
         //Current depth range for popups: 10 - 60
@@ -99,7 +110,7 @@ public class PopUpManager : MonoBehaviour
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), layer);
         spawningObject.transform.localScale = spawningObject.transform.localScale * scaleFactor;
 
-        spawningObject.GetComponent<PopUpController>().popText = _wordBank[Random.Range(0, _wordBank.Length)];
+        spawningObject.GetComponent<PopUpController>().popText = currentBank[Random.Range(0, currentBank.Length)];
     }
 
     public void StartGame()
@@ -110,9 +121,23 @@ public class PopUpManager : MonoBehaviour
 
     IEnumerator StartPopulate()
     {
+        //Split popup spawns into thirds, with a different difficulty of word bank for each
+        //Should be difficult at the bottom of the pile, then medium, then easy on top of the pile
         for (int i = 0; i < StartCount; i++)
         {
-            CreatePopUp(layer);
+            if(i < (StartCount / 3))
+            {
+                currentBank = _hardWords;
+            }
+            if(i >= (StartCount / 3) && i < (StartCount / 1.5))
+            {
+                currentBank = _medWords;
+            }
+            if(i >= (StartCount / 1.5))
+            {
+                currentBank = _easyWords;
+            }
+            CreatePopUp(layer, currentBank);
             sound.PlayOneShot(spawnsound);
             yield return new WaitForSecondsRealtime(StartPopUpTime);
             layer++;
