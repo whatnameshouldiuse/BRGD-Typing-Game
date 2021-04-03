@@ -42,10 +42,10 @@ public class GameOverMenu : MonoBehaviour
     public void Quit()
     {
         //Quit game once game is buildable
-        //Application.Quit();
+        Application.Quit();
 
         //Cute message for now because why not?
-        GameObject.Find("MainMenuLogo").GetComponent<TextMeshProUGUI>().text = "You cannot quit TYPERSPACE";
+        //GameObject.Find("MainMenuLogo").GetComponent<TextMeshProUGUI>().text = "You cannot quit TYPERSPACE";
     }
 
     public void Credits()
