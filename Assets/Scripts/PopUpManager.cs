@@ -57,6 +57,9 @@ public class PopUpManager : MonoBehaviour
 
     //Background music audio source
     public AudioSource bgsound;
+    
+    //Script for animating the wizard
+    public WizardAnimator wizScript;
 
     void Awake() 
     {
@@ -80,6 +83,9 @@ public class PopUpManager : MonoBehaviour
         //Set audiosources
         sound = this.gameObject.GetComponent<AudioSource>();
         bgsound = GameObject.Find("Music Handler").GetComponent<AudioSource>();
+
+        //Set wizard script
+        wizScript = GameObject.Find("Wizard").GetComponentInChildren<WizardAnimator>();
     }
 
     // Update is called once per frame
@@ -146,6 +152,9 @@ public class PopUpManager : MonoBehaviour
 
         //Start the music once popups are all spawned
         bgsound.Play();
+
+        //Once the music starts, start the wizard animation on the same beat
+        wizScript.isBopping = true;
 
         //Send text comparison script go-ahead to tabulate popups into lists
         this.gameObject.GetComponent<TextComparison>().MakeLists();
