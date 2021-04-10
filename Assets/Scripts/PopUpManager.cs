@@ -46,6 +46,8 @@ public class PopUpManager : MonoBehaviour
     private string[] _hardWords;
     string[] currentBank;
 
+    List<string> usedWords = new List<string>();    //list of strings used during spawning to prevent duplicates
+
     private bool _startRoutine = true;
 
     //Layer iterator to determine next popup's z coordinate (newer = closer to the screen)
@@ -60,6 +62,9 @@ public class PopUpManager : MonoBehaviour
     
     //Script for animating the wizard
     public WizardAnimator wizScript;
+
+    //Debug popup counter for printing
+    int popupCount = 0;
 
     void Awake() 
     {
@@ -116,7 +121,25 @@ public class PopUpManager : MonoBehaviour
         spawningObject.transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), layer);
         spawningObject.transform.localScale = spawningObject.transform.localScale * scaleFactor;
 
-        spawningObject.GetComponent<PopUpController>().popText = currentBank[Random.Range(0, currentBank.Length)];
+        //While loop to filter out previously-used words for this game
+        bool goodToGo = false;      //bool to gatekeep whether the popup is good to go
+
+        while(goodToGo == false)
+        {
+            string newText = currentBank[Random.Range(0, currentBank.Length)];  //randomly select word
+            if (!usedWords.Contains(newText))
+            {
+                usedWords.Add(newText);                                             //If list doesn't contain this word yet, add it
+                spawningObject.GetComponent<PopUpController>().popText = newText;   //Assign word to popup prefab
+                goodToGo = true;                                                    //Switch bool to end loop
+                popupCount++;                                                       //Iterate debug counter
+            }
+            //else
+            //{
+            //    print("Duplicate: " + newText);
+            //}
+            //spawningObject.GetComponent<PopUpController>().popText = currentBank[Random.Range(0, currentBank.Length)];
+        }
     }
 
     public void StartGame()
@@ -161,5 +184,8 @@ public class PopUpManager : MonoBehaviour
 
         //Start time so the timer will start
         Time.timeScale = 1;
+
+        //Print debug to console: how many popups spawned
+        print(popupCount + " popups spawned");
     }
 }
