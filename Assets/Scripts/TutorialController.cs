@@ -53,6 +53,9 @@ public class TutorialController : MonoBehaviour
         //Start the spawning routine for the main game
         managerScript.StartGame();
 
+        //Destroy the speech bubble object (for now, until better scripting is in)
+        Destroy(GameObject.Find("Speech Bubble Text"));
+
         //Once score is handled, delete this object once and for all
         Destroy(this.gameObject);
     }
