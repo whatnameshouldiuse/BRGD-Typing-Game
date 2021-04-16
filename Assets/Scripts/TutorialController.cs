@@ -15,6 +15,8 @@ public class TutorialController : MonoBehaviour
     public GameObject popupHandler;     //The popup handler object
     public PopUpManager managerScript;  //The spawning script for the main game
 
+    public GameObject titleMusic;       //The audio player object for the title music
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,9 @@ public class TutorialController : MonoBehaviour
         //Get popup handler and spawning script
         popupHandler = GameObject.Find("Popup Handler");
         managerScript = popupHandler.GetComponent<PopUpManager>();
+
+        //Get title music player
+        titleMusic = GameObject.Find("TitleMusic");
     }
 
     // Update is called once per frame
@@ -52,6 +57,9 @@ public class TutorialController : MonoBehaviour
 
         //Start the spawning routine for the main game
         managerScript.StartGame();
+
+        //End the title music loop
+        titleMusic.GetComponent<TitleMusicHandler>().StopMusic();
 
         //Destroy the speech bubble object (for now, until better scripting is in)
         Destroy(GameObject.Find("Speech Bubble Text"));
