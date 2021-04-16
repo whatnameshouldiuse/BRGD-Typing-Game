@@ -15,6 +15,12 @@ public class TutorialController : MonoBehaviour
     public GameObject popupHandler;     //The popup handler object
     public PopUpManager managerScript;  //The spawning script for the main game
 
+    public GameObject windowBar;        //Children objects of the tutorial handler object
+    public GameObject popupSprite;
+
+    public GameObject wizardSpeechBubble;//The wizard speech bubble and text
+    public TextMeshProUGUI wizardText;
+
     public GameObject titleMusic;       //The audio player object for the title music
 
     // Start is called before the first frame update
@@ -41,6 +47,14 @@ public class TutorialController : MonoBehaviour
 
         //Get title music player
         titleMusic = GameObject.Find("TitleMusic");
+
+        //Get children objects
+        windowBar = transform.Find("Window Bar").gameObject;
+        popupSprite = transform.Find("Sprite").gameObject;
+
+        //Get the wizard (I've always wanted to say that)
+        wizardSpeechBubble = GameObject.Find("Speech Bubble Text");
+        wizardText = wizardSpeechBubble.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -49,22 +63,50 @@ public class TutorialController : MonoBehaviour
 
     }
 
-    //When the player successfully destroys the popup, this method runs
+    //When the player successfully destroys the popup, this method runs; treat as State 05
     public void Winner()
     {
         //Set tutorial boolean to false
         tutorial = false;
 
-        //Start the spawning routine for the main game
+        //Delete tutorial popup graphics
+        Destroy(windowBar);
+        Destroy(popupSprite);
+
+        //Start the speech bubble progression (second coroutine starts via PopupManager script)
+        StartCoroutine(TutSpeech1());
+    }
+
+    //Coroutine for wizard speech bubbles (part 1, before popups spawn in)
+    public IEnumerator TutSpeech1()
+    {
+        wizardText.text = "Excellent! Hopefully you will never need this arcane knowledge.";
+        print("05");
+        yield return new WaitForSecondsRealtime(3);
+        wizardText.text = "Now, go forth and enjoy your browsing experience!";
+        print("10");
+        yield return new WaitForSecondsRealtime(3);
+        wizardText.text = "Wait... do you hear that? In the distance...";
+        yield return new WaitForSecondsRealtime(3);
         managerScript.StartGame();
-
-        //End the title music loop
         titleMusic.GetComponent<TitleMusicHandler>().StopMusic();
+        wizardText.text = "OH DEAR GOD NO";
+    }
 
-        //Destroy the speech bubble object (for now, until better scripting is in)
-        Destroy(GameObject.Find("Speech Bubble Text"));
+    //Middleman function to start the second speech bubble coroutine; otherwise the popup manager script's own coroutine
+    //will terminate on the next frame, terminating this coroutine with it
+    public void TutSpeech2start()
+    {
+        StartCoroutine(TutSpeech2());
+    }
 
-        //Once score is handled, delete this object once and for all
-        Destroy(this.gameObject);
+    //Coroutine for wizard speech bubbles (part 2, after popups spawn in)
+    public IEnumerator TutSpeech2()
+    {
+        wizardText.text = "Quick! Delete the popups before they crash your computer!";
+        yield return new WaitForSecondsRealtime(3);
+        wizardText.text = "I'll be over here, grooving to the beat.";
+        yield return new WaitForSecondsRealtime(3);
+        Destroy(wizardSpeechBubble);
     }
 }

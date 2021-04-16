@@ -63,6 +63,9 @@ public class PopUpManager : MonoBehaviour
     //Script for animating the wizard
     public WizardAnimator wizScript;
 
+    //Tutorial controller script
+    public TutorialController tutScript;
+
     //Debug popup counter for printing
     int popupCount = 0;
 
@@ -89,8 +92,9 @@ public class PopUpManager : MonoBehaviour
         sound = this.gameObject.GetComponent<AudioSource>();
         bgsound = GameObject.Find("Music Handler").GetComponent<AudioSource>();
 
-        //Set wizard script
+        //Set wizard script and tutorial script
         wizScript = GameObject.Find("Wizard").GetComponentInChildren<WizardAnimator>();
+        tutScript = this.gameObject.GetComponentInChildren<TutorialController>();
     }
 
     // Update is called once per frame
@@ -181,6 +185,9 @@ public class PopUpManager : MonoBehaviour
 
         //Send text comparison script go-ahead to tabulate popups into lists
         this.gameObject.GetComponent<TextComparison>().MakeLists();
+
+        //Start second wizard speech bubble coroutine
+        tutScript.TutSpeech2start();
 
         //Start time so the timer will start
         Time.timeScale = 1;

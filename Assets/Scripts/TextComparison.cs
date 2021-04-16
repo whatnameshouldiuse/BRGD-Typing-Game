@@ -62,14 +62,14 @@ public class TextComparison : MonoBehaviour
             }
         }
 
-        //Populate list of active popups for starting layer
-        foreach (GameObject g in allPops)
-        {
-            if (g.GetComponent<PopUpController>().topLayer == true)
-            {
-                activePops.Add(g);
-            }
-        }
+        ////Populate list of active popups for starting layer
+        //foreach (GameObject g in allPops)
+        //{
+        //    if (g.GetComponent<PopUpController>().topLayer == true)
+        //    {
+        //        activePops.Add(g);
+        //    }
+        //}
     }
 
     //The original text comparison algorithm improvised by Toby
