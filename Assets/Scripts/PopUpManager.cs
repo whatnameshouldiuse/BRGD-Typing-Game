@@ -194,6 +194,6 @@ public class PopUpManager : MonoBehaviour
         Time.timeScale = 1;
 
         //Print debug to console: how many popups spawned
-        print(popupCount + " popups spawned");
+        //print(popupCount + " popups spawned");
     }
 }
