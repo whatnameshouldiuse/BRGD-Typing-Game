@@ -81,10 +81,8 @@ public class TutorialController : MonoBehaviour
     public IEnumerator TutSpeech1()
     {
         wizardText.text = "Excellent! Hopefully you will never need this arcane knowledge.";
-        print("05");
         yield return new WaitForSecondsRealtime(3);
         wizardText.text = "Now, go forth and enjoy your browsing experience!";
-        print("10");
         yield return new WaitForSecondsRealtime(3);
         wizardText.text = "Wait... do you hear that? In the distance...";
         yield return new WaitForSecondsRealtime(3);
@@ -108,5 +106,6 @@ public class TutorialController : MonoBehaviour
         wizardText.text = "I'll be over here, grooving to the beat.";
         yield return new WaitForSecondsRealtime(3);
         Destroy(wizardSpeechBubble);
+        Destroy(this.gameObject);
     }
 }

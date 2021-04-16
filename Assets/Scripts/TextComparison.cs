@@ -56,7 +56,7 @@ public class TextComparison : MonoBehaviour
         //Populate list of popups with all popups
         foreach (Transform child in transform)
         {
-            if (child.gameObject.name.Contains("Pop"))
+            if (child.gameObject.name.Contains("Pop") && child.gameObject.name != "TutorialPopup")
             {
                 allPops.Add(child.gameObject);
             }
@@ -75,12 +75,12 @@ public class TextComparison : MonoBehaviour
     //The original text comparison algorithm improvised by Toby
     public void CompareText(string playerText)
     {
-        GameObject winner = activePops[0];  //The popup with the closest match; initialize with first in list
+        GameObject winner = allPops[0];  //The popup with the closest match; initialize with first in list
         float highScore = 0;    //The score of the winning popup; initialize with 0 (doesn't matter, first in list will override)
         float scoremod = 0;     //The score modifier if the player successfully destroys a popup
         float oldLayer = 100;     //Layer variable for the current winner of the loop; lower z coordinates are incentivized
 
-        foreach (GameObject g in activePops)
+        foreach (GameObject g in allPops)
         {
             float hits = 0;       //How many correct characters
             float miss = 0;       //How mnay wrong characters
@@ -163,7 +163,6 @@ public class TextComparison : MonoBehaviour
         //If the winner had a high enough score, it counts and the popup is destroyed
         if (highScore >= 0.6)
         {
-            activePops.Remove(winner);
             allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner(scoremod);
             sound.PlayOneShot(deleteSound);
@@ -173,12 +172,12 @@ public class TextComparison : MonoBehaviour
     //The second attempt at a text comparison algorithm, using Damerau-Levenshtein
     public void CompareText2(string playerText)
     {
-        GameObject winner = activePops[0];  //The popup with the closest match; initialize with first in list
+        GameObject winner = allPops[0];  //The popup with the closest match; initialize with first in list
         int highScore = 999;    //The score of the winning popup; initialize with 999 so the first score overrides
         float scoremod = 0;     //The score modifier if the player successfully destroys a popup
         float oldLayer = 100;     //Layer variable for the current winner of the loop; lower z coordinates are incentivized
 
-        foreach (GameObject g in activePops)
+        foreach (GameObject g in allPops)
         {
             //Get the popup's text string
             string popString = g.GetComponent<PopUpController>().popText;
@@ -228,7 +227,6 @@ public class TextComparison : MonoBehaviour
         //If the winner had a good enough score, it counts and the popup is destroyed
         if (highScore < 3)
         {
-            activePops.Remove(winner);
             allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner(scoremod);
             sound.PlayOneShot(deleteSound);
