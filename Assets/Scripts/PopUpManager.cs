@@ -187,6 +187,7 @@ public class PopUpManager : MonoBehaviour
         this.gameObject.GetComponent<TextComparison>().MakeLists();
 
         //Start second wizard speech bubble coroutine
+        //Have to use a middle-man function to keep coroutine from terminating after this one terminates
         tutScript.TutSpeech2start();
 
         //Start time so the timer will start
