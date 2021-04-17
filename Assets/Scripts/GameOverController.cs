@@ -27,7 +27,7 @@ public class GameOverController : MonoBehaviour
     public void Victory()
     {
         //Record how much time was left on the timer
-        timeLeft = GameObject.Find("Timer").GetComponent<TimerController>().timer;
+        timeLeft = GameObject.Find("Countdown").GetComponent<TimerController>().timer;
         
         //Load the victory scene
         SceneManager.LoadScene("VictoryScene");

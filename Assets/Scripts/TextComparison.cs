@@ -195,9 +195,9 @@ public class TextComparison : MonoBehaviour
             }
         }
 
-        print(highScore);
-        print(winner.GetComponent<PopUpController>().popText);
-        print(playerText);
+        //print(highScore);
+        //print(winner.GetComponent<PopUpController>().popText);
+        //print(playerText);
 
         //Feedback for the player based on score and score modifier assignment
         if (highScore >= 4)

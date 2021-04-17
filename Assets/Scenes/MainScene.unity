@@ -2016,7 +2016,7 @@ MonoBehaviour:
   WordBankEasy: {fileID: 4900000, guid: b7b8ad99dd4639046a082f9bcae97be2, type: 3}
   WordBankMedium: {fileID: 4900000, guid: 5e8a63f1870e1f943bf01a90108d685f, type: 3}
   WordBankHard: {fileID: 4900000, guid: f8cc31fc4902afb449ffc71802f38ba5, type: 3}
-  StartCount: 50
+  StartCount: 5
   StartPopUpTime: 0.1
   PopUpTime: 2
   XMin: 7

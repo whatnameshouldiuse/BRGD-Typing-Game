@@ -102,11 +102,11 @@ public class PopUpManager : MonoBehaviour
     {
         if (!_startRoutine) StopAllCoroutines();
 
-        if (Input.GetMouseButtonDown(0) && !_startRoutine)
-        {
-            CreatePopUp(layer, _easyWords);
-            layer++;
-        }
+        //if (Input.GetMouseButtonDown(0) && !_startRoutine)
+        //{
+        //    CreatePopUp(layer, _easyWords);
+        //    layer++;
+        //}
     }
 
     private void CreatePopUp(int layerRef, string[] wordBank)
