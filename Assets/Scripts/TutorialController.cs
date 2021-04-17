@@ -105,7 +105,8 @@ public class TutorialController : MonoBehaviour
         yield return new WaitForSecondsRealtime(3);
         wizardText.text = "I'll be over here, grooving to the beat.";
         yield return new WaitForSecondsRealtime(3);
-        Destroy(wizardSpeechBubble);
+        //Move speech bubble until it's needed again
+        wizardSpeechBubble.transform.position = new Vector3 (wizardSpeechBubble.transform.position.x + 10000, wizardSpeechBubble.transform.position.y, wizardSpeechBubble.transform.position.z);
         Destroy(this.gameObject);
     }
 }

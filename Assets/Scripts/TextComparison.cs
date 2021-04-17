@@ -27,6 +27,8 @@ public class TextComparison : MonoBehaviour
     public AudioClip OkaySound;
     public AudioClip MissSound;
 
+    public bool vic;        //Boolean for if the win condition has been met yet or not
+
     //public string playerText;   //The text input by the player
 
     // Start is called before the first frame update
@@ -45,9 +47,10 @@ public class TextComparison : MonoBehaviour
     void Update()
     {
         //When the game runs out of popups to destroy, the player wins!
-        if (adsLeft == 0)
+        if (adsLeft == 0 && !vic)
         {
             gameOverObject.GetComponent<GameOverController>().Victory();
+            vic = true;
         }
     }
 
