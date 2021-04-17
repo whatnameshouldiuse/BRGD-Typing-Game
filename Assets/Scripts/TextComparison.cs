@@ -39,6 +39,8 @@ public class TextComparison : MonoBehaviour
         tutorialPopup = GameObject.Find("TutorialPopup");                       //Get tutorial object
         tutorialScript = tutorialPopup.GetComponent<TutorialController>();      //Get tutorial script
 
+        adsLeft = 20;   //Set temp value to keep game from triggering victory pre-game
+
         sound = this.gameObject.GetComponent<AudioSource>();                //Get audio source
     }
 
