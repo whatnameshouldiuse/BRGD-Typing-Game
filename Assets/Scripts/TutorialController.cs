@@ -64,7 +64,6 @@ public class TutorialController : MonoBehaviour
 
         //Set scaling value for tutorial popup graphics
         size = transform.localScale;
-        spSize = popupSprite.transform.localScale;
     }
 
     // Update is called once per frame
