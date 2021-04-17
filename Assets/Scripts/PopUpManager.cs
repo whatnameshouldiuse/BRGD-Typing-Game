@@ -102,7 +102,7 @@ public class PopUpManager : MonoBehaviour
         }
 
         //Set time to 0 so timer doesn't start until the end of the spawning routine
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
 
         //Set scale factor
         scaleFactor = 0.46f;
@@ -199,6 +199,9 @@ public class PopUpManager : MonoBehaviour
         //Start the music once popups are all spawned
         bgsound.Play();
 
+        //Set how many ads need to be destroyed in the Text Comparison script
+        this.gameObject.GetComponent<TextComparison>().adsLeft = StartCount;
+
         //Once the music starts, start the wizard animation on the same beat
         wizScript.isBopping = true;
 
@@ -210,7 +213,8 @@ public class PopUpManager : MonoBehaviour
         tutScript.TutSpeech2start();
 
         //Start time so the timer will start
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
+        GameObject.Find("Countdown").GetComponent<TimerController>().timeGo = true;
 
         //Print debug to console: how many popups spawned
         //print(popupCount + " popups spawned");

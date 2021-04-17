@@ -14,6 +14,7 @@ public class TextComparison : MonoBehaviour
     public GameObject gameOverObject;//The handler for ending the game and scene management
 
     public int adsLeft;         //How many ads are left in the game
+                                //This is set by the PopupManager script when spawning popups
 
     public GameObject tutorialPopup;            //The tutorial popup object
     public TutorialController tutorialScript;   //The script for managing the tutorial
@@ -35,8 +36,6 @@ public class TextComparison : MonoBehaviour
     void Start()
     {
         gameOverObject = GameObject.Find("Win/Loss Handler");               //Assign game over handler
-        adsLeft = this.gameObject.GetComponent<PopUpManager>().StartCount;  //Set how many ads are left from starting spawn count
-
         tutorialPopup = GameObject.Find("TutorialPopup");                       //Get tutorial object
         tutorialScript = tutorialPopup.GetComponent<TutorialController>();      //Get tutorial script
 
@@ -49,6 +48,7 @@ public class TextComparison : MonoBehaviour
         //When the game runs out of popups to destroy, the player wins!
         if (adsLeft == 0 && !vic)
         {
+            GameObject.Find("Countdown").GetComponent<TimerController>().timeGo = false;
             gameOverObject.GetComponent<GameOverController>().Victory();
             vic = true;
         }
