@@ -32,7 +32,7 @@ public class ScoreReporter : MonoBehaviour
         if(timeLeft != 0)
         {
             //Add time bonus to score
-            score += (Mathf.RoundToInt(time)) * 100;
+            score += (Mathf.RoundToInt(timeLeft)) * 100;
 
             time = 120 - timeLeft;
             minLeft = (Mathf.FloorToInt(time / 60));               //Calculate min and sec ints from sec float readout
@@ -56,6 +56,9 @@ public class ScoreReporter : MonoBehaviour
             //Set score readout
             GameObject.Find("Score Readout").GetComponent<TextMeshProUGUI>().text = "Score: " + score;
         }
+
+        //Delete win/loss object so it doesn't duplicate later
+        Destroy(gameOverObject);
     }
 
     // Update is called once per frame

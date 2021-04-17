@@ -43,6 +43,9 @@ public class GameOverController : MonoBehaviour
     //If player destroys all popups before the timer runs out, they win!
     public void Victory()
     {
+        //Stop the timescale to stop the timer
+        Time.timeScale = 0;
+
         //Record how much time was left on the timer
         timeLeft = GameObject.Find("Countdown").GetComponent<TimerController>().timer;
 
