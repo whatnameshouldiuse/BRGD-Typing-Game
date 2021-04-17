@@ -1437,7 +1437,7 @@ GameObject:
   - component: {fileID: 1357422882}
   m_Layer: 0
   m_Name: Cursor Handler
-  m_TagString: Untagged
+  m_TagString: Cursor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

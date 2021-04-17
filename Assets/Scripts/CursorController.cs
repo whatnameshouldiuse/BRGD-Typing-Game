@@ -16,7 +16,18 @@ public class CursorController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sound = this.gameObject.GetComponent<AudioSource>();
+        //Generate an array with all objects tagged as "Cursor"
+        GameObject[] dupes = GameObject.FindGameObjectsWithTag("Cursor");
+
+        //If the array length > 1, another title music player already exists and this one should be deleted
+        if (dupes.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject); //Make persistent on scene load if not deleted as a duplication
+
+        sound = this.gameObject.GetComponent<AudioSource>();    //Get audio source for sound effects
     }
 
     // Update is called once per frame
@@ -26,13 +37,13 @@ public class CursorController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && EventSystem.current.currentSelectedGameObject != null && EventSystem.current.currentSelectedGameObject.tag == "Button")
         {
             sound.PlayOneShot(clickdown);
-            buttonclick = true;
+            //buttonclick = true;
         }
 
-        if (Input.GetMouseButtonUp(0) && buttonclick == true)
-        {
-            sound.PlayOneShot(clickup);
-            buttonclick = false;
-        }
+        //if (Input.GetMouseButtonUp(0) && buttonclick == true)
+        //{
+        //    sound.PlayOneShot(clickup);
+        //    buttonclick = false;
+        //}
     }
 }
