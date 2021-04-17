@@ -53,4 +53,22 @@ public class GameOverMenu : MonoBehaviour
         //Go to credits scene
         SceneManager.LoadScene("CreditsScene");
     }
+
+    public void Easy()
+    {
+        //Set difficulty to easy
+        GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff = 0;
+    }
+
+    public void Med()
+    {
+        //Set difficulty to medium
+        GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff = 1;
+    }
+
+    public void Hard()
+    {
+        //Set difficulty to hard
+        GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff = 2;
+    }
 }

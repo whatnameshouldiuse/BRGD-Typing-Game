@@ -82,6 +82,25 @@ public class PopUpManager : MonoBehaviour
     {
         //StartCoroutine(StartPopulate());
 
+        //Get difficulty value from difficulty handler object
+        int diff = GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff;
+
+        //Set number of popups based on difficulty selected
+        if (diff == 0)
+        {
+            StartCount = 25;
+        }
+
+        if (diff == 1)
+        {
+            StartCount = 35;
+        }
+
+        if (diff == 2)
+        {
+            StartCount = 45;
+        }
+
         //Set time to 0 so timer doesn't start until the end of the spawning routine
         Time.timeScale = 0;
 

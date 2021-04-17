@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Button
   - TitleMusic
+  - Difficulty
   layers:
   - Default
   - TransparentFX
