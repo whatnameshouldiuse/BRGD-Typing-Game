@@ -358,6 +358,8 @@ public class TextComparison : MonoBehaviour
         if (playerText == tutorialScript.popText)
         {
             tutorialScript.Winner();
+            sound.PlayOneShot(PerfectSound);
+            sound.PlayOneShot(deleteSound);
         }
     }
 }

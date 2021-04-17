@@ -11,6 +11,8 @@ public class TutorialController : MonoBehaviour
     public float score;     //The base score value for this popup's word
 
     public bool tutorial;   //Boolean for it the game is still in tutorial mode
+    public bool isWinner;   //Boolean for if the popup is getting deleted
+    public bool deleted;    //Boolean for if the tutorial popup has already been deleted
 
     public GameObject popupHandler;     //The popup handler object
     public PopUpManager managerScript;  //The spawning script for the main game
@@ -20,6 +22,10 @@ public class TutorialController : MonoBehaviour
 
     public GameObject wizardSpeechBubble;//The wizard speech bubble and text
     public TextMeshProUGUI wizardText;
+
+    public Vector2 size;    //Scaling vectors for popup
+    public Vector2 spSize;
+    public Vector2 sizeMod; //Change vector for popup's scaling
 
     public GameObject titleMusic;       //The audio player object for the title music
 
@@ -55,12 +61,28 @@ public class TutorialController : MonoBehaviour
         //Get the wizard (I've always wanted to say that)
         wizardSpeechBubble = GameObject.Find("Speech Bubble Text");
         wizardText = wizardSpeechBubble.GetComponent<TextMeshProUGUI>();
+
+        //Set scaling value for tutorial popup graphics
+        size = transform.localScale;
+        spSize = popupSprite.transform.localScale;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //If the popup is being deleted
+        if (isWinner && transform.localScale.x > 0)
+        {
+            sizeMod += new Vector2(Time.deltaTime, Time.deltaTime);
+            transform.localScale = size - sizeMod;
+        }
 
+        if (isWinner && transform.localScale.x <= 0 && deleted == false)
+        {
+            //Move tutorial popup graphics off-screen once animation is played out
+            transform.position = new Vector3(10000, 10000, 0);
+            deleted = true;
+        }
     }
 
     //When the player successfully destroys the popup, this method runs; treat as State 05
@@ -69,9 +91,8 @@ public class TutorialController : MonoBehaviour
         //Set tutorial boolean to false
         tutorial = false;
 
-        //Delete tutorial popup graphics
-        Destroy(windowBar);
-        Destroy(popupSprite);
+        //Set isWinner to true to start deletion animation
+        isWinner = true;
 
         //Start the speech bubble progression (second coroutine starts via PopupManager script)
         StartCoroutine(TutSpeech1());
