@@ -436,6 +436,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c28060b62505ee468bbd2511bb5fab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diff: 0
+  regButton: {fileID: 0}
+  hovButton:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  regEasy: {fileID: 0}
+  hovEasy: {fileID: 0}
+  regMed: {fileID: 0}
+  hovMed: {fileID: 0}
+  regHard: {fileID: 0}
+  hovHard: {fileID: 0}
+  timer: 0
 --- !u!114 &825807961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,6 +857,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c28060b62505ee468bbd2511bb5fab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diff: 0
+  regButton: {fileID: 0}
+  hovButton:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  regEasy: {fileID: 0}
+  hovEasy: {fileID: 0}
+  regMed: {fileID: 0}
+  hovMed: {fileID: 0}
+  regHard: {fileID: 0}
+  hovHard: {fileID: 0}
+  timer: 0
 --- !u!114 &1174087319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,7 +1202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: -245}
+  m_AnchoredPosition: {x: 1357, y: -245}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335203153
@@ -1685,7 +1713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 717, y: -400}
+  m_AnchoredPosition: {x: 1709, y: -400}
   m_SizeDelta: {x: 433, y: 113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511496042
@@ -1700,6 +1728,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c28060b62505ee468bbd2511bb5fab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diff: 0
+  regButton: {fileID: 0}
+  hovButton:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  regEasy: {fileID: 0}
+  hovEasy: {fileID: 0}
+  regMed: {fileID: 0}
+  hovMed: {fileID: 0}
+  regHard: {fileID: 0}
+  hovHard: {fileID: 0}
+  timer: 0
 --- !u!114 &1511496043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,6 +1932,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c28060b62505ee468bbd2511bb5fab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diff: 0
+  regButton: {fileID: 0}
+  hovButton:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  regEasy: {fileID: 21300000, guid: f5e8583f131b5f74f8cfca8e99ed2b62, type: 3}
+  hovEasy: {fileID: 21300000, guid: 3991be89ec687b24c8a397b9d84a4817, type: 3}
+  regMed: {fileID: 21300000, guid: fa8500e24c330aa4180e1db115c3db40, type: 3}
+  hovMed: {fileID: 21300000, guid: 27c6471500363804887a2ad158d68a48, type: 3}
+  regHard: {fileID: 21300000, guid: 98cb25d6107663141b100370c48c903f, type: 3}
+  hovHard: {fileID: 21300000, guid: 2f7b39b636389bf48a61bfafd560a334, type: 3}
+  timer: 0
 --- !u!114 &1807944734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1903,7 +1959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1936,7 +1992,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1807944733}
         m_TargetAssemblyTypeName: GameOverMenu, Assembly-CSharp
-        m_MethodName: Med
+        m_MethodName: Diff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2069,6 +2125,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c28060b62505ee468bbd2511bb5fab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diff: 0
+  regButton: {fileID: 0}
+  hovButton:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  regEasy: {fileID: 0}
+  hovEasy: {fileID: 0}
+  regMed: {fileID: 0}
+  hovMed: {fileID: 0}
+  regHard: {fileID: 0}
+  hovHard: {fileID: 0}
+  timer: 0
 --- !u!1 &1901999994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,7 +2175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 717, y: -147}
+  m_AnchoredPosition: {x: 1544, y: -147}
   m_SizeDelta: {x: 433, y: 113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901999996
@@ -2120,6 +2190,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c28060b62505ee468bbd2511bb5fab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diff: 0
+  regButton: {fileID: 0}
+  hovButton:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  regEasy: {fileID: 0}
+  hovEasy: {fileID: 0}
+  regMed: {fileID: 0}
+  hovMed: {fileID: 0}
+  regHard: {fileID: 0}
+  hovHard: {fileID: 0}
+  timer: 0
 --- !u!114 &1901999997
 MonoBehaviour:
   m_ObjectHideFlags: 0

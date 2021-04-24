@@ -7,16 +7,35 @@ using TMPro;
 
 public class GameOverMenu : MonoBehaviour
 {
+    public int diff;                    //Difficulty toggle int
+    public Sprite regButton;            //Sprite for when difficulty button is not hovered over
+    public SpriteState hovButton;       //Sprite for when difficulty button is hovered over
+
+    SpriteState ss = new SpriteState(); //Spritestate for swapping button hover graphics
+    public Sprite regEasy;              //Sprites for swapping difficulty graphics
+    public Sprite hovEasy;
+    public Sprite regMed;
+    public Sprite hovMed;
+    public Sprite regHard;
+    public Sprite hovHard;
+
+    public float timer; //stopwatch value to delay difficulty button press
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Get diff
+        diff = GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff;
+
+        //Get difficulty button graphic destinations
+        regButton = GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite;
+        hovButton = GameObject.Find("MedButton").GetComponent<Button>().spriteState;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;    //update stopwatch
     }
 
     public void Restart()
@@ -70,5 +89,41 @@ public class GameOverMenu : MonoBehaviour
     {
         //Set difficulty to hard
         GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff = 2;
+    }
+
+    public void Diff()
+    {
+        //Change difficulty and update button graphics
+        if (diff == 0 && timer > 0.2)
+        {
+            diff = 1;
+            GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff = 1;
+            GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite = regMed;
+            ss.highlightedSprite = hovMed;
+            GameObject.Find("MedButton").GetComponent<Button>().spriteState = ss;
+            print("Easy to Med");
+            timer = 0;
+            
+        }
+        if (diff == 1 && timer > 0.2)
+        {
+            diff = 2;
+            GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff = 2;
+            GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite = regHard;
+            ss.highlightedSprite = hovHard;
+            GameObject.Find("MedButton").GetComponent<Button>().spriteState = ss;
+            print("Med to Hard");
+            timer = 0;
+        }
+        if (diff == 2 && timer > 0.2)
+        {
+            diff = 0;
+            GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff = 0;
+            GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite = regEasy;
+            ss.highlightedSprite = hovEasy;
+            GameObject.Find("MedButton").GetComponent<Button>().spriteState = ss;
+            print("Hard to Easy");
+            timer = 0;
+        }
     }
 }
