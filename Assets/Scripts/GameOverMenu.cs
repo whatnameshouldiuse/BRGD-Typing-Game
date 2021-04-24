@@ -21,15 +21,24 @@ public class GameOverMenu : MonoBehaviour
 
     public float timer; //stopwatch value to delay difficulty button press
 
+    public AudioSource sound;   //button sound effect source and audio clip
+    public AudioClip clickdown;
+
     // Start is called before the first frame update
     void Start()
     {
         //Get diff
         diff = GameObject.Find("Difficulty Handler").GetComponent<DifficultyScript>().diff;
 
-        //Get difficulty button graphic destinations
-        regButton = GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite;
-        hovButton = GameObject.Find("MedButton").GetComponent<Button>().spriteState;
+        ////Get difficulty button graphic destinations
+        //regButton = GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite;
+        //hovButton = GameObject.Find("MedButton").GetComponent<Button>().spriteState;
+
+        //Get audiosource
+        sound = this.gameObject.GetComponent<AudioSource>();
+
+        //Get sound effect (ripping from other game object so don't have to assign in editor a million times)
+        clickdown = GameObject.Find("Cursor Handler").GetComponent<CursorController>().clickdown;
     }
 
     // Update is called once per frame
@@ -101,9 +110,12 @@ public class GameOverMenu : MonoBehaviour
             GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite = regMed;
             ss.highlightedSprite = hovMed;
             GameObject.Find("MedButton").GetComponent<Button>().spriteState = ss;
-            print("Easy to Med");
+            //print("Easy to Med");
             timer = 0;
-            
+
+            //Play button sound effect
+            sound.PlayOneShot(clickdown);
+
         }
         if (diff == 1 && timer > 0.2)
         {
@@ -112,8 +124,11 @@ public class GameOverMenu : MonoBehaviour
             GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite = regHard;
             ss.highlightedSprite = hovHard;
             GameObject.Find("MedButton").GetComponent<Button>().spriteState = ss;
-            print("Med to Hard");
+            //print("Med to Hard");
             timer = 0;
+
+            //Play button sound effect
+            sound.PlayOneShot(clickdown);
         }
         if (diff == 2 && timer > 0.2)
         {
@@ -122,8 +137,11 @@ public class GameOverMenu : MonoBehaviour
             GameObject.Find("MedButton").GetComponentInChildren<Image>().sprite = regEasy;
             ss.highlightedSprite = hovEasy;
             GameObject.Find("MedButton").GetComponent<Button>().spriteState = ss;
-            print("Hard to Easy");
+            //print("Hard to Easy");
             timer = 0;
+
+            //Play button sound effect
+            sound.PlayOneShot(clickdown);
         }
     }
 }
