@@ -30,6 +30,10 @@ public class TextComparison : MonoBehaviour
 
     public bool vic;        //Boolean for if the win condition has been met yet or not
 
+    public GameObject feedbackBubble;   //Speech bubble for the wizard to give feedback
+    public bool fdbready;               //Boolean for if feedback is enabled
+    public Vector3 oldpos;              //Starting position of feedback speech bubble
+
     //public string playerText;   //The text input by the player
 
     // Start is called before the first frame update
@@ -42,6 +46,10 @@ public class TextComparison : MonoBehaviour
         adsLeft = 20;   //Set temp value to keep game from triggering victory pre-game
 
         sound = this.gameObject.GetComponent<AudioSource>();                //Get audio source
+
+        feedbackBubble = GameObject.Find("Feedback Bubble Text");   //Get feedback bubble
+
+        oldpos = feedbackBubble.transform.position;
     }
 
     // Update is called once per frame
@@ -209,24 +217,28 @@ public class TextComparison : MonoBehaviour
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Miss!";
             sound.PlayOneShot(MissSound);
+            StartCoroutine(Feedback("Hmm..."));
         }
         if (highScore == 3)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Okay!";
             sound.PlayOneShot(OkaySound);
             scoremod = 0.6f;
+            StartCoroutine(Feedback("Alright!"));
         }
         if (highScore == 2)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Great!";
             sound.PlayOneShot(GreatSound);
             scoremod = 0.8f;
+            StartCoroutine(Feedback("Great!"));
         }
         if (highScore <= 1)
         {
             feedback.GetComponent<TextMeshProUGUI>().text = "Perfect!";
             sound.PlayOneShot(PerfectSound);
             scoremod = 1f;
+            StartCoroutine(Feedback("Perfect!"));
         }
 
         //If the winner had a good enough score, it counts and the popup is destroyed
@@ -361,5 +373,19 @@ public class TextComparison : MonoBehaviour
             sound.PlayOneShot(PerfectSound);
             sound.PlayOneShot(deleteSound);
         }
+    }
+
+    IEnumerator Feedback(string fdb)
+    {
+        //Assign feedback text to text element
+        feedbackBubble.GetComponentInChildren<TextMeshProUGUI>().text = fdb;
+        //If feedback is enabled, move speech bubble to right position
+        if (fdbready == true)
+        {
+            feedbackBubble.transform.position = new Vector3(oldpos.x - (759f / 108f), oldpos.y, oldpos.z);
+            yield return new WaitForSecondsRealtime(1.5f);
+        }
+        //Move feedback away again once done
+        feedbackBubble.transform.position = oldpos;
     }
 }

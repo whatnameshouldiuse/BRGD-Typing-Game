@@ -69,6 +69,8 @@ public class GameOverController : MonoBehaviour
     //Coroutine for wizard speech bubbles after winning
     public IEnumerator VicSpeech()
     {
+        //Wait a second for final feedback bubble
+        yield return new WaitForSecondsRealtime(1.5f);
         //Move speech bubble and do last few speech bubbles
         wizardSpeechBubble.transform.position = new Vector3(wizardSpeechBubble.transform.position.x - 10000, wizardSpeechBubble.transform.position.y, wizardSpeechBubble.transform.position.z);
         wizardText.text = "Phew! Glad that's over.";
