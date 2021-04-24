@@ -41,11 +41,11 @@ public class ScoreReporter : MonoBehaviour
             //Apply difficulty modifier to score
             if (diff == 0)
             {
-                score = score * 0.75f;
+                score = score * 0.5f;
             }
             if (diff == 2)
             {
-                score = score * 1.25f;
+                score = score * 1.5f;
             }
 
             time = 120 - timeLeft;
@@ -70,11 +70,11 @@ public class ScoreReporter : MonoBehaviour
             //Apply difficulty modifier to score
             if (diff == 0)
             {
-                score = score * 0.75f;
+                score = score * 0.5f;
             }
             if (diff == 2)
             {
-                score = score * 1.25f;
+                score = score * 1.5f;
             }
             
             //Set score readout
