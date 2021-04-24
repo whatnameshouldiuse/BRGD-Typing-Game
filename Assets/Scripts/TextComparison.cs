@@ -242,7 +242,7 @@ public class TextComparison : MonoBehaviour
         }
 
         //If the winner had a good enough score, it counts and the popup is destroyed
-        if (highScore < 3)
+        if (highScore < 4)
         {
             allPops.Remove(winner);
             winner.GetComponent<PopUpController>().Winner(scoremod);
