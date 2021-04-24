@@ -15,7 +15,7 @@ public class LeaderboardScoreEntry : MonoBehaviour
     {
         Leaderboard.ScoreEntry entry = Leaderboard.GetEntry(EntryNumber-1);
 
-        _entryName.text = EntryNumber + ". " + entry.name;
+        _entryName.text = entry.name;
         _entryScore.text = entry.score.ToString();
     }
 }
