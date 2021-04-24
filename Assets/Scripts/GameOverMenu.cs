@@ -51,11 +51,12 @@ public class GameOverMenu : MonoBehaviour
     public void MainMenu()
     {
         //Destroy the game over handler object to prevent replication issues
-        GameObject gameOverObject = GameObject.Find("Win/Loss Handler");
-        Destroy(gameOverObject);
+        //GameObject gameOverObject = GameObject.Find("Win/Loss Handler");
+        //Destroy(gameOverObject);
 
         //Load the main menu scene
         SceneManager.LoadScene("StartMenuScene");
+
     }
 
     public void Quit()
@@ -71,6 +72,12 @@ public class GameOverMenu : MonoBehaviour
     {
         //Go to credits scene
         SceneManager.LoadScene("CreditsScene");
+    }
+
+    public void Leaderboard()
+    {
+        //Go to the leaderboard scene
+        SceneManager.LoadScene("LeaderboardScene");
     }
 
     public void Easy()
